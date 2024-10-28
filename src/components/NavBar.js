@@ -46,7 +46,7 @@ function NavBar() {
           </li>
           <li>
             <a className="navbar-hover-effect" href="logo">
-              FAQs
+             Telegram
             </a>
           </li>
           <li>

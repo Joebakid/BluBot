@@ -16,7 +16,7 @@ body {
   /* position: relative; */
   /* height: 100vh;
   width: 100vw; */
-  background: radial-gradient(circle, #030212, #1a0933, #05001b, #000000 90%);
+  background: radial-gradient(circle, #2e287e, #1a0933, #05001b, #000000 90%);
   /* overflow: hidden; */
   font-family: "Days One", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
@@ -37,8 +37,6 @@ a {
   margin: 100px 0;
 }
 
-.bg-color {
-}
 .bg-img {
   background: url("/public/img/background-img.jpg");
   background-size: cover;
@@ -261,51 +259,9 @@ a {
 
 /* ROADMAP */
 
-.roadmap-title {
-  display: flex;
-  justify-content: center;
-  margin: 40px 0;
-}
-
-.roadmap-card {
-  background-color: #1c1b2a;
-  padding: 40px;
-  width: 50%;
-  border-top-right-radius: 10px;
-  border-bottom-left-radius: 10px;
-}
-
-.card-title-roadmap {
-  color: #65b1c9;
-  padding: 10px 0;
-}
-
-.flex-roadmap-card {
-  display: flex;
-  justify-content: start;
-  gap: 10px;
-}
-
-.wrapper-svg {
-  position: relative;
-}
-
-.connector-two {
-  position: absolute;
-}
-
-.connector {
-  position: absolute;
-  top: 170px;
-  left: 0;
-  transform: translateY(-50%);
-}
-
-.flex-roadmap-card-two {
-  display: flex;
-  justify-content: end;
-  margin: 100px;
-}
+/* .padding-roadmap {
+  padding: 100px 0;
+} */
 
 /* UTILITY */
 
@@ -497,6 +453,44 @@ hr {
   position: relative;
 }
 
+/* FAQS */
+
+.faqs-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+}
+
+.text-faqs {
+  color: #aaa7a7;
+}
+
+.card-container-faqs {
+  display: flex;
+  flex-direction: column;
+  margin: 100px 0;
+  gap: 20px;
+  /* border: 2px solid linear-gradient(90deg, #f334a9 46.4%, #66b2ca 100%); */
+}
+
+.title-card-faqs {
+  color: #5fddf3;
+  font-size: 1.3rem;
+}
+
+.card-faqs {
+  padding-bottom: 40px;
+  padding-top: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  background-color: #48d6d21a;
+  border: 2px solid #b94fb6;
+}
+
+.text-card-faqs {
+  color: #aaa7a7;
+  font-size: 1rem;
+}
+
 /* MEDIA QUERRY */
 @media (max-width: 760px) {
   .section-spacing {
@@ -583,3 +577,6 @@ hr {
     gap: 50px;
   }
 }
+
+/* //////////////////////////////////////////////////
+/* /////////////////////////////////////////////////// */
