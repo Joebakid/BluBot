@@ -199,12 +199,18 @@ a {
   gap: 10px;
   justify-content: center;
   align-items: center;
+  padding: 20px 0;
 }
 
 .flex-container-about-icon-text {
   display: flex;
   flex-direction: column;
   gap: 0;
+}
+
+.svg-width-about {
+  width: 200px;
+  height: auto;
 }
 
 /* ******************************* */
@@ -265,7 +271,7 @@ a {
   flex-direction: column;
   align-items: center;
   padding: 40px;
-  background-color: #0f0e17;
+  /* background-color: #0f0e17; */
   color: #ffffff;
 }
 
@@ -657,9 +663,20 @@ hr {
     gap: 50px;
   }
 
+  .HowToBuy-Card {
+    flex-direction: column;
+  }
+
+  /* GIF */
   .video-container {
     width: 100%;
     height: auto;
+  }
+}
+
+@media (min-width: 1500px) {
+  .title-lg {
+    font-size: 5rem;
   }
 }
 
