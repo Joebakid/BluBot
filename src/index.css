@@ -259,9 +259,75 @@ a {
 
 /* ROADMAP */
 
-/* .padding-roadmap {
-  padding: 100px 0;
-} */
+/* Container for the whole roadmap */
+.roadmap-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px;
+  background-color: #0f0e17;
+  color: #ffffff;
+}
+
+.roadmap-title {
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #ffffff;
+}
+
+.roadmap-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  max-width: 600px;
+}
+
+/* Individual roadmap phase container */
+.roadmap-phase-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.roadmap-phase {
+  width: 100%;
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  color: #ffffff;
+}
+
+.roadmap-phase h2 {
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.roadmap-phase p {
+  font-size: 1rem;
+  color: #d0d0d0;
+  line-height: 1.5;
+}
+
+/* Dotted line styles */
+.dotted-line {
+  width: 2px;
+  height: 40px;
+  background: repeating-linear-gradient(
+    to bottom,
+    #ffffff,
+    #ffffff 3px,
+    transparent 3px,
+    transparent 6px
+  );
+}
+
+.vertical {
+  margin: 10px 0;
+}
 
 /* UTILITY */
 
@@ -551,6 +617,20 @@ hr {
     display: grid;
   }
 
+  /* ABOUT */
+  .flex-icon-text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: center;
+    align-items: start;
+    padding: 30px 0;
+  }
+  .svg-width-about {
+    width: 100px;
+    height: auto;
+  }
+
   /* ROADMAP */
 
   /* Utility */
@@ -575,6 +655,11 @@ hr {
   .flex-container-HowToBuy {
     grid-template-columns: 1fr;
     gap: 50px;
+  }
+
+  .video-container {
+    width: 100%;
+    height: auto;
   }
 }
 

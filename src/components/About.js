@@ -4,7 +4,7 @@ function About() {
   return (
     <section>
       <div className="container">
-        <div className="grid-about section-spacing">
+        <div className="grid-about">
           <img
             className="flip-horizontal width grid-2"
             src="img/about-img.png"
@@ -21,8 +21,7 @@ function About() {
             <div className="flex-container-about-icon-text">
               <div className="flex-icon-text">
                 <svg
-                  width="200"
-                  height="200"
+                  className="svg-width-about"
                   viewBox="0 0 111 110"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -68,8 +67,7 @@ function About() {
               </div>
               <div className="flex-icon-text">
                 <svg
-                  width="200"
-                  height="200"
+                  className="svg-width-about"
                   viewBox="0 0 111 110"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
@@ -120,8 +118,7 @@ function About() {
               </div>
               <div className="flex-icon-text">
                 <svg
-                  width="200"
-                  height="200"
+                  className="svg-width-about"
                   viewBox="0 0 111 110"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
