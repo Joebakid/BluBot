@@ -329,10 +329,24 @@ a {
     transparent 3px,
     transparent 6px
   );
+  position: relative;
 }
 
 .vertical {
   margin: 10px 0;
+}
+
+/* Add arrow to the end of each dotted line */
+.dotted-line::after {
+  content: "";
+  position: absolute;
+  bottom: -8px; /* Position it at the end of the line */
+  left: 50%;
+  transform: translateX(-50%) rotate(45deg); /* Center and rotate the arrow */
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
 }
 
 /* UTILITY */
@@ -527,6 +541,7 @@ hr {
 
 /* FAQS */
 
+/* Main FAQ container styling */
 .faqs-title {
   font-size: 2.5rem;
   margin-bottom: 40px;
@@ -534,33 +549,66 @@ hr {
 
 .text-faqs {
   color: #aaa7a7;
+  text-align: center;
 }
 
 .card-container-faqs {
   display: flex;
   flex-direction: column;
-  margin: 100px 0;
-  gap: 20px;
-  /* border: 2px solid linear-gradient(90deg, #f334a9 46.4%, #66b2ca 100%); */
+  margin: 40px 0;
+  gap: 10px;
+}
+
+.card-faqs {
+  background-color: #48d6d21a;
+  border: 2px solid #b94fb6;
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
 }
 
 .title-card-faqs {
   color: #5fddf3;
   font-size: 1.3rem;
+  margin: 0;
 }
 
-.card-faqs {
-  padding-bottom: 40px;
-  padding-top: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
-  background-color: #48d6d21a;
-  border: 2px solid #b94fb6;
+.faq-toggle {
+  font-size: 1.5rem;
+  color: #5fddf3;
+  transition: transform 0.3s ease, color 0.3s ease;
 }
 
+.faq-toggle.open {
+  transform: rotate(180deg); /* Rotates the icon when open */
+  color: #ff00ff; /* Optional: Change color when open */
+}
+
+/* FAQ Answer text with transition effect */
 .text-card-faqs {
   color: #aaa7a7;
+  padding: 0 20px;
   font-size: 1rem;
+  line-height: 1.6;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+  opacity: 0;
+}
+
+/* When the answer is open */
+.text-card-faqs.show {
+  max-height: 200px; /* Set a max height larger than the expected content */
+  padding-bottom: 15px; /* Add padding when open */
+  opacity: 1;
 }
 
 /* MEDIA QUERRY */
@@ -655,6 +703,10 @@ hr {
     align-content: center;
     gap: 20px;
     margin-top: 30px;
+  }
+
+  .Tokenomics-title {
+    font-size: 2rem;
   }
 
   /* How To Buy */
