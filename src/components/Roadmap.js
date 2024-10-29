@@ -1,19 +1,71 @@
-import React from "react";
- 
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
-const RoadmapPhase = ({ title, phase, description, bgColor }) => (
-  <div className="roadmap-phase" style={{ backgroundColor: bgColor }}>
-    <h2>{title}</h2>
-    <p>
-      <strong>{phase}</strong> {description}
-    </p>
-  </div>
-);
+gsap.registerPlugin(ScrollTrigger);
+
+const RoadmapPhase = ({ title, phase, description, bgColor, index }) => {
+  const phaseRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      phaseRef.current,
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        delay: index * 2, // Each card appears 2 seconds apart
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: phaseRef.current,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+  }, [index]);
+
+  return (
+    <div
+      ref={phaseRef}
+      className="roadmap-phase"
+      style={{ backgroundColor: bgColor }}
+    >
+      <h2>{title}</h2>
+      <p>
+        <strong>{phase}</strong> {description}
+      </p>
+    </div>
+  );
+};
 
 const Roadmap = () => {
+  const titleRef = useRef(null);
+
+  useEffect(() => {
+    gsap.fromTo(
+      titleRef.current,
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 0.1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: titleRef.current,
+          start: "top 90%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+  }, []);
+
   return (
     <section className="roadmap-container section-spacing">
-      <h1 className="roadmap-title">Roadmap</h1>
+      <h1 ref={titleRef} className="roadmap-title">
+        Roadmap
+      </h1>
       <div className="roadmap-content">
         <div className="roadmap-phase-container">
           <RoadmapPhase
@@ -21,6 +73,7 @@ const Roadmap = () => {
             phase="Phase 1:"
             description="Launch Our Coin, Create The Website, And Grow Our Social Media Presence"
             bgColor="#2e2e3a"
+            index={0}
           />
           <div className="dotted-line vertical"></div>
           <RoadmapPhase
@@ -28,6 +81,7 @@ const Roadmap = () => {
             phase="Phase 2:"
             description="Establish Partnerships And Secure Listings On Major Exchanges."
             bgColor="#48b1c4"
+            index={0.1}
           />
           <div className="dotted-line vertical"></div>
           <RoadmapPhase
@@ -35,6 +89,7 @@ const Roadmap = () => {
             phase="Phase 3:"
             description="Release Exclusive Alien NFTs And Unlock Community Rewards"
             bgColor="#2e2e3a"
+            index={0.2}
           />
           <div className="dotted-line vertical"></div>
           <RoadmapPhase
@@ -42,6 +97,7 @@ const Roadmap = () => {
             phase="Phase 4:"
             description="Launch Ultimate Utilities, Introduce Staking, And Host Large-Scale Events."
             bgColor="#48b1c4"
+            index={0.3}
           />
         </div>
       </div>

@@ -1,17 +1,67 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import { gsap, Power3 } from "gsap";
 
 export default function Header() {
+  const titleRef = useRef(null);
+  const subHeadingRef = useRef(null);
+  const btnRef = useRef(null);
+  const imgRef = useRef(null);
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+    tl.fromTo(
+      titleRef.current,
+      { opacity: 0, y: "-30%" },
+      { opacity: 1, y: "0%", duration: 2, ease: Power3.easeOut }
+    )
+      .fromTo(
+        subHeadingRef.current,
+        { opacity: 0, y: "30%" },
+        {
+          opacity: 1,
+          y: "0%",
+          duration: 2,
+          ease: Power3.easeOut,
+        },
+        "<25%"
+      )
+      .fromTo(
+        btnRef.current,
+        { opacity: 0, y: "30%" },
+        {
+          opacity: 1,
+          y: "0%",
+          duration: 1,
+          ease: Power3.easeOut,
+        },
+        "<25%"
+      )
+      .fromTo(
+        imgRef.current,
+        { opacity: 0, x: "30%" },
+        {
+          opacity: 1,
+          x: "0%",
+          duration: 1.5,
+          ease: Power3.easeOut,
+        },
+        "<25%"
+      );
+  }, []);
+
   return (
-    <section >
+    <section>
       <div className="container">
         <div className="grid-header">
-          <div className="flex-header ">
-            <h1 className="title-lg">The Token from Outer Space</h1>
-            <p className="text-lg">
+          <div className="flex-header">
+            <h1 className="title-lg" ref={titleRef}>
+              The Token from Outer Space
+            </h1>
+            <p className="text-lg" ref={subHeadingRef}>
               Join the coolest meme coin in the galaxy and embark on an
               out-of-this-world adventure with Alien Meme Coin!
             </p>
-            <a className="btn  " href="#btn">
+            <a className="btn" href="#btn" ref={btnRef}>
               Join the Galactic Mission
               <svg
                 width="35"
@@ -34,8 +84,8 @@ export default function Header() {
                     y2="21.6218"
                     gradientUnits="userSpaceOnUse"
                   >
-                    <stop stop-color="#FF4581" />
-                    <stop offset="1" stop-color="#4388DD" />
+                    <stop stopColor="#FF4581" />
+                    <stop offset="1" stopColor="#4388DD" />
                   </linearGradient>
                 </defs>
               </svg>
@@ -47,6 +97,7 @@ export default function Header() {
               className="header-img flip-horizontal width"
               src="img/welcome-img.png"
               alt="welcome img"
+              ref={imgRef}
             />
           </div>
         </div>

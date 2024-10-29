@@ -1,8 +1,19 @@
-import React, { useState } from "react";
- 
+import React, { useState, useEffect, useRef } from "react";
+import { gsap } from "gsap";
+import { Power3 } from "gsap";
 
 function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
+  const navRef = useRef(null); // Use useRef to reference the nav element
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+    tl.fromTo(
+      navRef.current,
+      { opacity: 0, y: "-10%" },
+      { opacity: 1, y: "0%", duration: 3, delay: 0.2, ease: Power3.easeOut }
+    );
+  }, []);
 
   // Toggle the menu on button click
   const toggleMenu = () => {
@@ -10,7 +21,7 @@ function NavBar() {
   };
 
   return (
-    <nav className="line">
+    <nav ref={navRef} className="line">
       <div className="container">
         {/* Hamburger button for mobile view */}
         <div className="hamburger" onClick={toggleMenu}>
@@ -46,7 +57,7 @@ function NavBar() {
           </li>
           <li>
             <a className="navbar-hover-effect" href="logo">
-             Telegram
+              Telegram
             </a>
           </li>
           <li>
