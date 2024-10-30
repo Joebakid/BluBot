@@ -21,7 +21,7 @@ function FAQs() {
       .fromTo(
         titleThirdSection.current,
         { y: "10%", ease: Power3.easeOut },
-        { y: "0%", duration: 0.1 }
+        { y: "0%", duration: 1 }
       );
   }, []);
 

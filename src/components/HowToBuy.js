@@ -51,7 +51,7 @@ function HowToBuy() {
     const handleMouseLeave = () => {
       gsap.to(buttonRef.current, {
         scale: 1,
-        duration: 0.3,
+        duration: 1,
         ease: "power3.out",
       });
     };
