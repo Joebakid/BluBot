@@ -23,18 +23,26 @@ function NavBar() {
   return (
     <nav ref={navRef} className="line">
       <div className="container">
-        {/* Hamburger button for mobile view */}
-        <div className="hamburger" onClick={toggleMenu}>
-          <div className={`bar ${isOpen ? "open" : ""}`}></div>
-          <div className={`bar ${isOpen ? "open" : ""}`}></div>
-          <div className={`bar ${isOpen ? "open" : ""}`}></div>
+        {/* Flex container for logo and hamburger */}
+        <div className="logo-hamburger">
+          <a href="logo" className="logo display-none-desktop">
+            Alien
+          </a>
+          <div className="hamburger" onClick={toggleMenu}>
+            <div className={`bar ${isOpen ? "open" : ""}`}></div>
+            <div className={`bar ${isOpen ? "open" : ""}`}></div>
+            <div className={`bar ${isOpen ? "open" : ""}`}></div>
+          </div>
         </div>
 
         {/* Navigation menu */}
         <ul className={`flex-navBar ${isOpen ? "show" : ""}`}>
           <li>
-            <a href="logo">Alien</a>
+            <a className="logo display-none-mobile" href="logo">
+              Alien
+            </a>
           </li>
+
           <li>
             <a className="navbar-hover-effect" href="logo">
               About Us

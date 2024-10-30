@@ -61,6 +61,9 @@ body {
 nav {
   opacity: 0;
 }
+.display-none-desktop {
+  display: none;
+}
 
 /* ///////////////////////////////// */
 
@@ -131,6 +134,24 @@ a {
   -ms-transform: scale(1.1);
   -o-transform: scale(1.1);
   transform-origin: center;
+}
+
+.logo-hamburger {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  font-size: 1.5rem;
+  color: #f334a9;
+  text-decoration: none;
+  padding: 10px;
+}
+
+.hamburger {
+  display: none; /* Visible only on mobile */
 }
 
 /* Utility classes */
@@ -670,6 +691,14 @@ hr {
 
 /* MEDIA QUERRY */
 @media (max-width: 760px) {
+  .display-none-desktop {
+    display: block;
+  }
+
+  .display-none-mobile {
+    display: none;
+  }
+
   .section-spacing {
     margin: 50px 0;
   }
