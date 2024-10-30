@@ -1,10 +1,33 @@
-import React from "react";
+import React, { useEffect, useRef } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function Utility() {
+  const phaseRef = useRef(null); // Create a ref to the element you want to animate
+
+  useEffect(() => {
+    gsap.fromTo(
+      phaseRef.current,
+      { opacity: 0, y: -50 },
+      {
+        opacity: 1,
+        y: 0,
+        duration: 1,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: phaseRef.current,
+          start: "top 80%",
+          toggleActions: "play none none reverse",
+        },
+      }
+    );
+  }, []);
   return (
     <section className="bg-color">
       <div className="container">
-        <div className="  ">
+        <div className=" ">
           <div className="utility-flex">
             <h1 className="utility-title">Utility</h1>
             <p className="text-align-center">
@@ -14,7 +37,7 @@ function Utility() {
           </div>
 
           <div className="utility-card-container">
-            <svg
+            <svg ref={phaseRef}
               className="svg-utility"
               viewBox="0 0 758 906"
               fill="none"
@@ -65,6 +88,7 @@ function Utility() {
               </defs>
             </svg>
             <svg
+             ref={phaseRef}
               className="svg-utility"
               viewBox="0 0 759 906"
               fill="none"
@@ -132,6 +156,7 @@ function Utility() {
               </defs>
             </svg>
             <svg
+             ref={phaseRef}
               className="svg-utility"
               height="500"
               viewBox="0 0 759 899"
@@ -213,6 +238,7 @@ function Utility() {
               </defs>
             </svg>
             <svg
+             ref={phaseRef}
               className="svg-utility"
               viewBox="0 0 759 903"
               fill="none"

@@ -1,8 +1,31 @@
-import React, { useState } from "react";
-// import "./FAQs.css";
+import React, { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { Power3 } from "gsap";
+
+gsap.registerPlugin(ScrollTrigger);
 
 function FAQs() {
-  function CardFaqs({ title, text }) {
+  const titleThirdSection = useRef(null);
+
+  useEffect(() => {
+    // Timeline for the title animation
+    gsap
+      .timeline({
+        scrollTrigger: {
+          trigger: titleThirdSection.current,
+          start: "top 30%",
+          scrub: 4,
+        },
+      })
+      .fromTo(
+        titleThirdSection.current,
+        { y: "10%", ease: Power3.easeOut },
+        { y: "0%", duration: 0.1 }
+      );
+  }, []);
+
+  function CardFaqs({ title, text, cardRef }) {
     const [isOpen, setIsOpen] = useState(false);
 
     const toggleOpen = () => {
@@ -23,15 +46,17 @@ function FAQs() {
   }
 
   return (
-    <section>
+    <section className="section-spacing">
       <hr />
-      <div className="container">
-        <h1 className="faqs-title">Have Any Question?</h1>
-        <p className="text-faqs">
-          Download the White Paper and discover Alien Meme Coin’s cosmic
-          approach, tokenomics, and meet the intergalactic team guiding the
-          mission!
-        </p>
+      <div className="container" ref={titleThirdSection}>
+        <div>
+          <h1 className="faqs-title">Have Any Question?</h1>
+          <p className="text-faqs">
+            Download the White Paper and discover Alien Meme Coin’s cosmic
+            approach, tokenomics, and meet the intergalactic team guiding the
+            mission!
+          </p>
+        </div>
 
         <div className="card-container-faqs">
           <CardFaqs
