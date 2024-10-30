@@ -18,7 +18,7 @@ function TokenData({ number, title, text }) {
         ease: "power3.out",
         scrollTrigger: {
           trigger: tokenRef.current,
-          start: "top 80%",
+          start: "bottom 80%",
           toggleActions: "play none none reverse",
         },
       }
