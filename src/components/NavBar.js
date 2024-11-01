@@ -69,7 +69,11 @@ function NavBar() {
             </a>
           </li>
           <li>
-            <a className="navbar-hover-effect" href="logo">
+            <a
+              className="navbar-hover-effect"
+              href="https://docs.google.com/document/d/14W-7-f1hYLuRaM-I6m4xAGfEtnHbx-Rw/edit?tab=t.0"
+              target="_blank"
+            >
               Whitepaper
             </a>
           </li>
