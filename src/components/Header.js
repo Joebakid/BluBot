@@ -58,8 +58,7 @@ export default function Header() {
               The Token from Outer Space
             </h1>
             <p className="text-lg" ref={subHeadingRef}>
-              Join the coolest meme coin in the galaxy and embark on an
-              out-of-this-world adventure with Alien Meme Coin!
+              Meet Blu A degenerate alien in search of new frens!
             </p>
             <a className="btn" href="#btn" ref={btnRef}>
               Join the Galactic Mission
