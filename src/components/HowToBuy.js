@@ -68,7 +68,7 @@ function HowToBuy() {
   }, []);
   return (
     <section className="bg-color">
-      <div className="container bg-color">
+      <div className="container bg-color" id="HowToBuy">
         <div className="section-spacing">
           <div className="flex-container-HowToBuy">
             <div className="flex-1-HowToBuy">

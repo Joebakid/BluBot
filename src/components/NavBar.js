@@ -38,33 +38,57 @@ function NavBar() {
         {/* Navigation menu */}
         <ul className={`flex-navBar ${isOpen ? "show" : ""}`}>
           <li>
-            <a className="logo display-none-mobile" href="logo">
+            <a
+              className="logo display-none-mobile"
+              href="#header"
+              rel="noopener noreferrer"
+            >
               Alien
             </a>
           </li>
 
           <li>
-            <a className="navbar-hover-effect" href="logo">
+            <a
+              className="navbar-hover-effect"
+              href="#about"
+              rel="noopener noreferrer"
+            >
               About Us
             </a>
           </li>
           <li>
-            <a className="navbar-hover-effect" href="logo">
+            <a
+              className="navbar-hover-effect"
+              href="#utility"
+              rel="noopener noreferrer"
+            >
               Utility
             </a>
           </li>
           <li>
-            <a className="navbar-hover-effect" href="logo">
+            <a
+              className="navbar-hover-effect"
+              href="#HowToBuy"
+              rel="noopener noreferrer"
+            >
               How To Buy
             </a>
           </li>
           <li>
-            <a className="navbar-hover-effect" href="logo">
+            <a
+              className="navbar-hover-effect"
+              href="#roadmap"
+              rel="noopener noreferrer"
+            >
               RoadMap
             </a>
           </li>
           <li>
-            <a className="navbar-hover-effect" href="logo">
+            <a
+              className="navbar-hover-effect"
+              href="logo"
+              rel="noopener noreferrer"
+            >
               Telegram
             </a>
           </li>
@@ -73,12 +97,17 @@ function NavBar() {
               className="navbar-hover-effect"
               href="https://docs.google.com/document/d/14W-7-f1hYLuRaM-I6m4xAGfEtnHbx-Rw/edit?tab=t.0"
               target="_blank"
+              rel="noopener noreferrer"
             >
               Whitepaper
             </a>
           </li>
           <li>
-            <a className="btn-navBar navbar-hover-effect" href="#btn">
+            <a
+              className="btn-navBar navbar-hover-effect"
+              href="#btn"
+              rel="noopener noreferrer"
+            >
               Buy Now
             </a>
           </li>

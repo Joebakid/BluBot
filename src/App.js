@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import { gsap } from "gsap";
 import { Power3 } from "gsap";
 import Header from "./components/Header";

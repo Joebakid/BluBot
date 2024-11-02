@@ -29,7 +29,7 @@ function Utility() {
   }, []);
   return (
     <section className="bg-color">
-      <div className="container">
+      <div className="container" id='utility'>
         <div className=" ">
           <div className="utility-flex" ref={phaseRef}>
             <h1 className="utility-title">Utility</h1>

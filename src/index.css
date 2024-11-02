@@ -20,6 +20,7 @@ body {
   /* overflow: hidden; */
   font-family: "Days One", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
+  scroll-behavior: smooth;
 }
 /* ///////////////////////////////// */
 /* components/Preloader.css */

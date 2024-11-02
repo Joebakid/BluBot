@@ -66,7 +66,7 @@ const Roadmap = () => {
       <h1 ref={titleRef} className="roadmap-title">
         Roadmap
       </h1>
-      <div className="roadmap-content">
+      <div className="roadmap-content" id="roadmap">
         <div className="roadmap-phase-container">
           <RoadmapPhase
             title="Launchpad To The Stars"

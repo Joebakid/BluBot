@@ -27,7 +27,7 @@ function About() {
     );
   }, []);
   return (
-    <section ref={sectionRef}>
+    <section ref={sectionRef} id="about">
       <div className="container">
         <div className="grid-about">
           <img

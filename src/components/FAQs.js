@@ -48,7 +48,7 @@ function FAQs() {
   return (
     <section className="section-spacing">
       <hr />
-      <div className="container" ref={titleThirdSection}>
+      <div className="container" ref={titleThirdSection} id='faqs'>
         <div>
           <h1 className="faqs-title">Have Any Question?</h1>
           <p className="text-faqs">
