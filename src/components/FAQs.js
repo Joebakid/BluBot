@@ -14,13 +14,13 @@ function FAQs() {
       .timeline({
         scrollTrigger: {
           trigger: titleThirdSection.current,
-          start: "bottom 80%",
+          start: "bottom 60%",
           scrub: 4,
         },
       })
       .fromTo(
         titleThirdSection.current,
-        { y: "10%", ease: Power3.easeOut },
+        { y: "50%", ease: Power3.easeOut },
         { y: "0%", duration: 1 }
       );
   }, []);
