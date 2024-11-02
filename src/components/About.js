@@ -12,7 +12,7 @@ function About() {
 
     gsap.fromTo(
       element,
-      { opacity: 0, y: 50 },
+      { opacity: 0, y: 10 },
       {
         opacity: 1,
         y: 0,
@@ -20,7 +20,7 @@ function About() {
         ease: "power3.out",
         scrollTrigger: {
           trigger: element,
-          start: "top 60%",
+          start: "top 90%",
           toggleActions: "play none none reverse",
         },
       }

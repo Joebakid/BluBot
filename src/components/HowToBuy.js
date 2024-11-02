@@ -18,7 +18,7 @@ function Card({ svg, title, text }) {
         ease: "power3.out",
         scrollTrigger: {
           trigger: cardRef.current,
-          start: "bottom 60%",
+          start: "bottom 90%",
           toggleActions: "play none none reverse",
         },
       }
