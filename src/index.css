@@ -253,6 +253,8 @@ a {
 
 .about-text {
   color: rgb(141, 141, 141);
+  line-height: 2;
+  font-weight: bold;
 }
 
 .about-heading {

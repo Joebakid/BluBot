@@ -44,7 +44,7 @@ function About() {
             </div>
 
             <div className="flex-container-about-icon-text">
-              <div className="flex-icon-text">
+              {/* <div className="flex-icon-text">
                 <svg
                   className="svg-width-about"
                   viewBox="0 0 111 110"
@@ -186,7 +186,12 @@ function About() {
                     of the ever-expanding meme-conomy
                   </p>
                 </div>
-              </div>
+              </div> */}
+              
+<p className="about-text">
+  Meet blu, the interstellar meme coin that’s here to take your crypto journey to out-of-this-world levels! blu isn't just any alien; he’s the quirkiest, most adventurous extraterrestrial who crash-landed straight into the meme universe from the farthest corners of space. blu is all about having fun, spreading laughs, and fueling the cosmic crypto scene with a splash of the unexpected. So buckle up, join the invasion, and get ready to explore where no meme coin has gone before. With blu, the only direction is up—into the stratosphere and beyond! 🚀👽✨
+</p>
+
             </div>
           </div>
         </div>
