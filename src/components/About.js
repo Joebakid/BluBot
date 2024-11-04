@@ -40,7 +40,7 @@ function About() {
             <div className="about-heading">
               {" "}
               <h2 className="About-color About-font">About US</h2>
-              <h1>Why choose Alien meme coin ?</h1>
+              <h1>Why choose $Blu memecoin ?</h1>
             </div>
 
             <div className="flex-container-about-icon-text">
@@ -85,7 +85,7 @@ function About() {
                   <p className="About-font about-text">
                     Born from the cosmic depths of space, we’re on a mission to
                     bring humor and innovation to the crypto world. Through
-                    Alien Meme Coin, we aim to make meme culture a universal
+                    Blu Meme Coin, we aim to make meme culture a universal
                     currency that everyone can enjoy.
                   </p>
                 </div>
@@ -135,7 +135,7 @@ function About() {
                   <h3>Transformative technologies</h3>
                   <p className="About-font about-text">
                     As the first extraterrestrial meme coin, we unite Earthlings
-                    and aliens alike in a shared adventure of humor, community,
+                    and Blu alike in a shared adventure of humor, community,
                     and wealth. Join us on this cosmic journey and become part
                     of the ever-expanding meme-conomy
                   </p>
@@ -181,7 +181,7 @@ function About() {
                   <h3>Transformative technologies</h3>
                   <p className="About-font about-text">
                     As the first extraterrestrial meme coin, we unite Earthlings
-                    and aliens alike in a shared adventure of humor, community,
+                    and Blu alike in a shared adventure of humor, community,
                     and wealth. Join us on this cosmic journey and become part
                     of the ever-expanding meme-conomy
                   </p>

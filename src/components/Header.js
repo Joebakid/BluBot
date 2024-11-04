@@ -58,7 +58,7 @@ export default function Header() {
               The Token from Outer Space
             </h1>
             <p className="text-lg" ref={subHeadingRef}>
-              Meet Blu A degenerate alien in search of new frens!
+              Meet Blu a degenerate alien in search of new frens!
             </p>
             <a className="btn" href="#btn" ref={btnRef}>
               Join the Galactic Mission

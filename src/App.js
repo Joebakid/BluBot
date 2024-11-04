@@ -47,7 +47,7 @@ function App() {
         <About />
       </div>
       <Roadmap />
-      <Utility />
+      {/* <Utility /> */}
       {/* <Gif /> */}
       <Tokenomics />
       <HowToBuy />

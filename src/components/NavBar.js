@@ -43,7 +43,7 @@ function NavBar() {
               href="#header"
               rel="noopener noreferrer"
             >
-              Alien
+              Blu
             </a>
           </li>
 

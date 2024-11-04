@@ -624,6 +624,7 @@ hr {
 .faqs-title {
   font-size: 2.5rem;
   margin-bottom: 40px;
+  text-align: center;
 }
 
 .text-faqs {

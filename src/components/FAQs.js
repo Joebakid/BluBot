@@ -52,7 +52,7 @@ function FAQs() {
         <div>
           <h1 className="faqs-title">Have Any Question?</h1>
           <p className="text-faqs">
-            Download the White Paper and discover Alien Meme Coin’s cosmic
+            Download the White Paper and discover Blu Meme Coin’s cosmic
             approach, tokenomics, and meet the intergalactic team guiding the
             mission!
           </p>
@@ -60,8 +60,8 @@ function FAQs() {
 
         <div className="card-container-faqs">
           <CardFaqs
-            title="What is Alien Meme Coin?"
-            text="It’s the first extraterrestrial meme coin, blending fun with real crypto utility."
+            title="What is Blu Meme Coin?"
+            text="It’s the first extraterrestrial memecoin, blending fun with real crypto utility."
           />
           <CardFaqs
             title="Is this a serious project?"
@@ -69,10 +69,10 @@ function FAQs() {
           />
           <CardFaqs
             title="Where can I buy it?"
-            text="On decentralized exchanges like PancakeSwap or Uniswap. Check the How to Buy section for details."
+            text="On decentralized exchanges like  Uniswap. Check the How to Buy section for details."
           />
           <CardFaqs
-            title="Do aliens exist?"
+            title="Does Blu actually exist?"
             text="We can't say for sure, but our community is out of this world!"
           />
           <CardFaqs
