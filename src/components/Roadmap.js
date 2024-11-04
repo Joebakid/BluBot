@@ -54,7 +54,7 @@ const Roadmap = () => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: titleRef.current,
-          start: "Bottom 60%",
+          start: "top 60%",
           toggleActions: "play none none reverse",
         },
       }

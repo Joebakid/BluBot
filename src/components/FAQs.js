@@ -14,7 +14,7 @@ function FAQs() {
       .timeline({
         scrollTrigger: {
           trigger: titleThirdSection.current,
-          start: "bottom 80%",
+          start: "bottom 60%",
           scrub: 4,
         },
       })
