@@ -48,7 +48,7 @@ function FAQs() {
   return (
     <section className="section-spacing">
       <hr />
-      <div className="container" ref={titleThirdSection} id='faqs'>
+      <div className="container" ref={titleThirdSection} id="faqs">
         <div>
           <h1 className="faqs-title">Have Any Question?</h1>
           <p className="text-faqs">
@@ -80,6 +80,10 @@ function FAQs() {
             text="Follow us on social media and join our Telegram!"
           />
         </div>
+
+        <p className="text-center">
+          Copyright © 2024 Blu. All rights reserved.
+        </p>
       </div>
     </section>
   );

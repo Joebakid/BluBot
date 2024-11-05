@@ -294,6 +294,11 @@ a {
   max-width: 100%;
 }
 
+.text-center {
+  text-align: center;
+  color: gray;
+}
+
 /* ******************************* */
 /* Hamburger Button Styles */
 .hamburger {
