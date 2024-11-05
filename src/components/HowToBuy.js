@@ -110,7 +110,7 @@ function HowToBuy() {
                   </svg>
                 }
                 title="Prepare Your Spaceship"
-                text="Install a crypto wallet (like MetaMask or Trust Wallet) to safely store your Alien Meme Coins."
+                text="Install a crypto wallet (like MetaMask or Trust Wallet) to safely store your Blu token."
               />
               <Card
                 svg={
@@ -156,7 +156,7 @@ function HowToBuy() {
                   </svg>
                 }
                 title="Launch to the Stars"
-                text="Swap your base coin for Alien Meme Coin on a decentralized exchange (DEX) like PancakeSwap or Uniswap."
+                text="Swap your base Eth for Blu token on a decentralized exchange (DEX)  ( Uniswap)."
               />
             </div>
             <div className="flex-2-HowToBuy">
@@ -217,8 +217,8 @@ function HowToBuy() {
                     />
                   </svg>
                 }
-                title="Fuel Up"
-                text="Purchase Dogecoin or any supported base coin on a cryptocurrency exchange (like Binance or Coinbase).."
+                title="Hold To The Moon"
+                text="Hold your blu token and prepare for the moon"
               />
 
               <Card

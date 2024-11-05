@@ -56,7 +56,7 @@ function NavBar() {
               About Us
             </a>
           </li>
-          <li>
+          {/* <li>
             <a
               className="navbar-hover-effect"
               href="#utility"
@@ -64,7 +64,7 @@ function NavBar() {
             >
               Utility
             </a>
-          </li>
+          </li> */}
           <li>
             <a
               className="navbar-hover-effect"
