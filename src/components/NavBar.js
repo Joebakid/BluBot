@@ -86,10 +86,21 @@ function NavBar() {
           <li>
             <a
               className="navbar-hover-effect"
-              href="logo"
+              href="https://t.me/BaseBlueAlienPortal"
               rel="noopener noreferrer"
+              target="_blank"
             >
               Telegram
+            </a>
+          </li>
+          <li>
+            <a
+              className="navbar-hover-effect"
+              href="https://x.com/BasedBlueAlien"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              X
             </a>
           </li>
           <li>
