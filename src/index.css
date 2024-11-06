@@ -20,6 +20,9 @@ body {
   /* overflow: hidden; */
   font-family: "Days One", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
+}
+
+html {
   scroll-behavior: smooth;
 }
 /* ///////////////////////////////// */
@@ -46,6 +49,35 @@ body {
   height: 40px;
   animation: spin 1s linear infinite;
   margin-right: 10px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0.7%;
+  left: 3%;
+  right: 3%;
+  border-radius: 20px;
+  padding: 0;
+  .container {
+    padding: 5px 0;
+  }
+  /*width: 100%;
+   */ /*background: rgba(0, 0, 0, 0.8);
+   */
+  background: #807ad4;
+  transition: all 3s ease-in-out;
+  box-shadow: 0px 0px 10px 5px rgba(132, 206, 14, 0.5);
+
+  /*Adjustbackgroundcolorasneeded*/
+  z-index: 1000;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  -webkit-transition: all 3s ease-in-out;
+  -moz-transition: all 3s ease-in-out;
+  -ms-transition: all 3s ease-in-out;
+  -o-transition: all 3s ease-in-out;
 }
 
 @keyframes spin {

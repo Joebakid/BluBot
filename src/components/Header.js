@@ -51,7 +51,7 @@ export default function Header() {
 
   return (
     <section>
-      <div className="container">
+      <div className="container header">
         <div className="grid-header" id="header">
           <div className="flex-header">
             <h1 className="title-lg" ref={titleRef}>
