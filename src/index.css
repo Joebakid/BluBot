@@ -544,6 +544,7 @@ a {
   text-align: center;
   font-size: 3rem;
   padding: 50px 0;
+  color: #47a6b6;
 }
 
 .video-curve {
@@ -671,6 +672,7 @@ hr {
   font-size: 2.5rem;
   margin-bottom: 40px;
   text-align: center;
+  color: #47a6b6;
 }
 
 .text-faqs {
