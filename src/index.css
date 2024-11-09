@@ -61,23 +61,29 @@ html {
   .container {
     padding: 5px 0;
   }
-  /*width: 100%;
-   */ /*background: rgba(0, 0, 0, 0.8);
-   */
+  /*background: rgba(0, 0, 0, 0.8);
+  */
   background: #807ad4;
-  transition: all 3s ease-in-out;
-  box-shadow: 0px 0px 10px 5px rgba(132, 206, 14, 0.5);
-
-  /*Adjustbackgroundcolorasneeded*/
+  transition: all 0.2s ease-in-out;
+  /*box-shadow: 0px 0px 10px 5px rgba(132, 206, 14, 0.5);
+  */ /*Adjustbackgroundcolorasneeded*/
   z-index: 1000;
   -webkit-border-radius: 20px;
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-  -webkit-transition: all 3s ease-in-out;
-  -moz-transition: all 3s ease-in-out;
-  -ms-transition: all 3s ease-in-out;
-  -o-transition: all 3s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+}
+
+.socials-faqs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+  gap: 40px;
 }
 
 @keyframes spin {
@@ -396,7 +402,7 @@ a {
 .roadmap-title {
   font-size: 2.5rem;
   margin-bottom: 40px;
-  color: #ffffff;
+  color: #47a6b6;
 }
 
 .roadmap-content {
@@ -578,6 +584,7 @@ hr {
 .HowToBuy-title {
   font-size: 2.5rem;
   margin-top: 30px;
+  color: #47a6b6;
 }
 
 .HowToBuy-Card {

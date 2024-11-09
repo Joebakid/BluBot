@@ -72,7 +72,7 @@ function HowToBuy() {
         <div className="section-spacing">
           <div className="flex-container-HowToBuy">
             <div className="flex-1-HowToBuy">
-              <h1 className="HowToBuy-title">How To Buy</h1>
+              <h1 className="HowToBuy-title">HOW TO BUY</h1>
               <Card
                 svg={
                   <svg

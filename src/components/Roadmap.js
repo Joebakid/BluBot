@@ -64,7 +64,7 @@ const Roadmap = () => {
   return (
     <section className="roadmap-container section-spacing">
       <h1 ref={titleRef} className="roadmap-title">
-        Roadmap
+        ROADMAP
       </h1>
       <div className="roadmap-content" id="roadmap">
         <div className="roadmap-phase-container">
