@@ -135,7 +135,7 @@ function NavBar() {
           <li>
             <a
               className="navbar-hover-effect"
-              href="https://x.com/BasedBlueAlien"
+              href="https://x.com/BasedBluAlien"
               rel="noopener noreferrer"
               target="_blank"
             >
