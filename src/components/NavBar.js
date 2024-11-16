@@ -104,7 +104,7 @@ function NavBar() {
           <li>
             <a
               className="navbar-hover-effect"
-              href="https://dexscreener.com/base/0xc4a0ca9bd929000333bf339c26a913c62f0e1439"
+              href="https://www.dextools.io/app/en/base/pair-explorer/0xc4a0ca9bd929000333bf339c26a913c62f0e1439?chart=true"
               rel="noopener noreferrer"
               target="_blank"
             >
