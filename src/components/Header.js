@@ -60,7 +60,13 @@ export default function Header() {
             <p className="text-lg" ref={subHeadingRef}>
               Meet Blu a degenerate alien in search of new frens!
             </p>
-            <a className="btn" href="#btn" ref={btnRef}>
+            <a
+              className="btn"
+              target="_blank"
+              href="https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0x52e0d3c27cc9e3607c1ca7914b9049be3d5e9c41"
+              ref={btnRef}
+              rel="noreferrer"
+            >
               Join the Galactic Mission
             </a>
           </div>

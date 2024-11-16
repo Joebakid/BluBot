@@ -281,7 +281,12 @@ Once you have your Alien Meme Coins, connect with our community on social media 
             </div>
           </div>
           <div className="container-hr">
-            <a href="link" ref={buttonRef} className="btn-HowToBuy">
+            <a
+              href="https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0x52e0d3c27cc9e3607c1ca7914b9049be3d5e9c41"
+              rel="noreferrer"
+              ref={buttonRef}
+              className="btn-HowToBuy"
+            >
               Buy Now!
             </a>
             <hr className="hr-HowToBuy" />

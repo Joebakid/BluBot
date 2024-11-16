@@ -104,6 +104,17 @@ function NavBar() {
           <li>
             <a
               className="navbar-hover-effect"
+              href="https://dexscreener.com/base/0xc4a0ca9bd929000333bf339c26a913c62f0e1439"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              Chart
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="navbar-hover-effect"
               href="https://docs.google.com/document/d/14W-7-f1hYLuRaM-I6m4xAGfEtnHbx-Rw/edit?tab=t.0"
               target="_blank"
               rel="noopener noreferrer"
