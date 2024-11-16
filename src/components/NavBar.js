@@ -175,8 +175,8 @@ function NavBar() {
           <li>
             <a
               className="btn-navBar navbar-hover-effect"
-              href="#btn"
               rel="noopener noreferrer"
+              href="https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0x52e0d3c27cc9e3607c1ca7914b9049be3d5e9c41"
             >
               Buy Now
             </a>
