@@ -291,6 +291,18 @@ Once you have your Alien Meme Coins, connect with our community on social media 
             </a>
             <hr className="hr-HowToBuy" />
           </div>
+
+          <div className="minting-section">
+            <h2 className="minting-title">Mint Your NFT</h2>
+            <iframe
+              src="https://embed.ipfscdn.io/ipfs/bafybeicd3qfzelz4su7ng6n523virdsgobrc5pcbarhwqv3dj3drh645pi/?contract=0xF1Bfa0E73cc0B097C2608669E58EfacB3a5c2C02&chain=%7B%22name%22%3A%22Base%22%2C%22chain%22%3A%22ETH%22%2C%22rpc%22%3A%5B%22https%3A%2F%2F8453.rpc.thirdweb.com%2F%24%7BTHIRDWEB_API_KEY%7D%22%5D%2C%22nativeCurrency%22%3A%7B%22name%22%3A%22Ether%22%2C%22symbol%22%3A%22ETH%22%2C%22decimals%22%3A18%7D%2C%22shortName%22%3A%22base%22%2C%22chainId%22%3A8453%2C%22testnet%22%3Afalse%2C%22slug%22%3A%22base%22%2C%22icon%22%3A%7B%22url%22%3A%22ipfs%3A%2F%2FQmaxRoHpxZd8PqccAynherrMznMufG6sdmHZLihkECXmZv%22%2C%22width%22%3A1200%2C%22height%22%3A1200%2C%22format%22%3A%22png%22%7D%7D&clientId=0e69f75459fb116b82b7e32232c94fb5&theme=dark&primaryColor=purple"
+              width="100%"
+              height="750px"
+              style={{ maxWidth: "100%" }}
+              frameBorder="0"
+              title="NFT Minting"
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>

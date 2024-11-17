@@ -31,6 +31,22 @@ body {
 html {
   scroll-behavior: smooth;
 }
+
+/* NFT */
+.minting-section {
+  margin-top: 20px;
+  padding: 20px;
+  background: #1a1a1a; /* Dark background for contrast */
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.minting-title {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 15px;
+  text-align: center;
+}
 /* ///////////////////////////////// */
 /* components/Preloader.css */
 .preloader {
