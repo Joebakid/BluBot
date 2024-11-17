@@ -85,7 +85,7 @@ function FAQs() {
         <div className="socials-faqs">
           <a
             className="navbar-hover-effect"
-            href="https://t.me/BaseBlueAlienPortal"
+            href="https://t.me/+8UZkauZX57YwNzEy"
             rel="noopener noreferrer"
             target="_blank"
           >
