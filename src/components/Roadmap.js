@@ -19,7 +19,7 @@ const RoadmapPhase = ({ title, phase, description, bgColor, index }) => {
         ease: "power3.out",
         scrollTrigger: {
           trigger: phaseRef.current,
-          start: "bottom 60%",
+          start: "top 20%",
           toggleActions: "play none none reverse",
         },
       }
