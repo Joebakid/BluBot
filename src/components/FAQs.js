@@ -81,7 +81,6 @@ function FAQs() {
           />
         </div>
 
-       
         <div className="socials-faqs">
           <a
             className="navbar-hover-effect"
@@ -135,9 +134,10 @@ function FAQs() {
             />
           </a>
         </div>
-         <p className="text-center">
-          Copyright © 2024 Blu. All rights reserved.
-        </p>
+        <div className="text-center">
+          <p>Copyright © 2024 Blu. All rights reserved.</p>
+          <a href="mailto:info@basedblualien.com">info@basedblualien.com</a>
+        </div>
       </div>
     </section>
   );
