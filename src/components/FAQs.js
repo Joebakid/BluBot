@@ -81,9 +81,7 @@ function FAQs() {
           />
         </div>
 
-        <p className="text-center">
-          Copyright © 2024 Blu. All rights reserved.
-        </p>
+       
         <div className="socials-faqs">
           <a
             className="navbar-hover-effect"
@@ -137,6 +135,9 @@ function FAQs() {
             />
           </a>
         </div>
+         <p className="text-center">
+          Copyright © 2024 Blu. All rights reserved.
+        </p>
       </div>
     </section>
   );

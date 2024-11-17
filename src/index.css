@@ -871,11 +871,16 @@ hr {
     flex-direction: column;
   }
 
-  /* GIF */
-  .video-container {
-    width: 100%;
-    height: auto;
-  }
+  /* FAQ */
+  .socials-faqs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 0;
+  gap: 20px;
+  flex-direction: column;
+}
+
 }
 
 @media (min-width: 1500px) {
