@@ -85,53 +85,57 @@ function FAQs() {
           Copyright © 2024 Blu. All rights reserved.
         </p>
         <div className="socials-faqs">
-          
-            <a
-              className="navbar-hover-effect"
-              href="https://t.me/BaseBlueAlienPortal"
-              rel="noopener noreferrer"
-              target="_blank"
+          <a
+            className="navbar-hover-effect"
+            href="https://t.me/BaseBlueAlienPortal"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <svg
+              width="25"
+              height="25"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
             >
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 24 24"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M21.8 2.2c-.5-.4-1.1-.4-1.6 0L2.5 10.7c-.6.2-.9.7-.9 1.3s.4 1.1.9 1.4l3.5 1.4 1.4 4c.2.7.9 1.2 1.7 1.2h.1c.5 0 1-.2 1.4-.5l2.9-2.2 3.7 3.7c.2.2.5.3.7.3.1 0 .2 0 .3-.1.3-.1.5-.4.6-.8l4.8-17.6c.1-.6 0-1.2-.4-1.6zm-9.8 10.8l-2.4 2.4-.8-2.2 7.2-5.9-4 5.7zm1 6.5l-2.5-2.5 1.7-1.7 2.5 2.5-1.7 1.7z"
-                  fill="white"
-                />
-              </svg>
-            </a>
-         
-            <a
-              className="navbar-hover-effect"
-              href="https://x.com/BasedBluAlien"
-              rel="noopener noreferrer"
-              target="_blank"
-            >
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20 20 L80 80"
-                  stroke="white"
-                  stroke-width="10"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M80 20 L20 80"
-                  stroke="white"
-                  stroke-width="10"
-                  stroke-linecap="round"
-                />
-              </svg>
-            </a>
-          
+              <path
+                d="M21.8 2.2c-.5-.4-1.1-.4-1.6 0L2.5 10.7c-.6.2-.9.7-.9 1.3s.4 1.1.9 1.4l3.5 1.4 1.4 4c.2.7.9 1.2 1.7 1.2h.1c.5 0 1-.2 1.4-.5l2.9-2.2 3.7 3.7c.2.2.5.3.7.3.1 0 .2 0 .3-.1.3-.1.5-.4.6-.8l4.8-17.6c.1-.6 0-1.2-.4-1.6zm-9.8 10.8l-2.4 2.4-.8-2.2 7.2-5.9-4 5.7zm1 6.5l-2.5-2.5 1.7-1.7 2.5 2.5-1.7 1.7z"
+                fill="white"
+              />
+            </svg>
+          </a>
+
+          <a
+            className="navbar-hover-effect"
+            href="https://dexscreener.com/base/0xc4a0ca9bd929000333bf339c26a913c62f0e1439"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <p className="dexscreen">
+              {" "}
+              <b>DEX</b>SCREENER
+            </p>
+          </a>
+          <a
+            className="navbar-hover-effect"
+            href="https://x.com/BasedBluAlien"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img className="x-icon" src="/img/x.png" alt="DEXTools Logo" />
+          </a>
+
+          <a
+            className="navbar-hover-effect"
+            href="https://www.dextools.io/app/en/base/pair-explorer/0xc4a0ca9bd929000333bf339c26a913c62f0e1439?chart=true"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              className="dextool-icon"
+              src="/img/Brand_DEXTools_Light.png"
+              alt="DEXTools Logo"
+            />
+          </a>
         </div>
       </div>
     </section>

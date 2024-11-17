@@ -102,13 +102,30 @@ function NavBar() {
           </li>
 
           <li>
+             <a
+            className="navbar-hover-effect"
+            href="https://dexscreener.com/base/0xc4a0ca9bd929000333bf339c26a913c62f0e1439"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <p className="dexscreen">
+              {" "}
+              <b>DEX</b>SCREENER
+            </p>
+          </a>
+          </li>
+          <li>
             <a
               className="navbar-hover-effect"
               href="https://www.dextools.io/app/en/base/pair-explorer/0xc4a0ca9bd929000333bf339c26a913c62f0e1439?chart=true"
               rel="noopener noreferrer"
               target="_blank"
             >
-              Chart
+           <img className="dextool-icon" src="/img/Brand_DEXTools_Light.png" alt="DEXTools Logo" />
+   {/* <p className="dexscreen">
+              {" "}
+              <b>DEX</b>TooLs
+            </p> */}
             </a>
           </li>
 
@@ -150,25 +167,7 @@ function NavBar() {
               rel="noopener noreferrer"
               target="_blank"
             >
-              <svg
-                width="25"
-                height="25"
-                viewBox="0 0 100 100"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M20 20 L80 80"
-                  stroke="white"
-                  stroke-width="10"
-                  stroke-linecap="round"
-                />
-                <path
-                  d="M80 20 L20 80"
-                  stroke="white"
-                  stroke-width="10"
-                  stroke-linecap="round"
-                />
-              </svg>
+               <img className="x-icon" src="/img/x.png" alt="DEXTools Logo" />
             </a>
           </li>
 
