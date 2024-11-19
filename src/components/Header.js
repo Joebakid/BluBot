@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { gsap, Power3 } from "gsap";
 
 export default function Header() {
@@ -6,6 +6,16 @@ export default function Header() {
   const subHeadingRef = useRef(null);
   const btnRef = useRef(null);
   const imgRef = useRef(null);
+  const [copied, setCopied] = useState(false);
+
+  const contractAddress = "0x52E0D3c27CC9e3607C1Ca7914b9049bE3d5e9C41";
+
+  const copyToClipboard = () => {
+    navigator.clipboard.writeText(contractAddress).then(() => {
+      setCopied(true);
+      setTimeout(() => setCopied(false), 2000); // Reset after 2 seconds
+    });
+  };
 
   useEffect(() => {
     const tl = gsap.timeline();
@@ -69,6 +79,12 @@ export default function Header() {
             >
               Join the Galactic Mission
             </a>
+            <div className="copy-contract">
+              <button className="btn-copy" onClick={copyToClipboard}>
+                Copy Contract Address
+              </button>
+              {copied && <span className="copied-msg">Copied!</span>}
+            </div>
           </div>
 
           <div>

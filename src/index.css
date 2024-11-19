@@ -32,6 +32,39 @@ html {
   scroll-behavior: smooth;
 }
 
+/* CONTRACT */
+
+.copy-contract {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+}
+
+.btn-copy {
+  background-color: #055c6b;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: all 0.5s ease-in-out;
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+
+.btn-copy:hover {
+  background-color: #0056b3;
+}
+
+.copied-msg {
+  margin-left: 10px;
+  color: green;
+  font-size: 14px;
+}
+
 /* NFT */
 .minting-section {
   margin-top: 20px;
@@ -774,6 +807,11 @@ hr {
 
 /* MEDIA QUERRY */
 @media (max-width: 760px) {
+  /*  */
+  .btn-copy {
+    width: 100%;
+  }
+  /*  */
   .display-none-desktop {
     display: block;
   }
