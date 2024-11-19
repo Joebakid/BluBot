@@ -6,6 +6,7 @@ export default function Header() {
   const subHeadingRef = useRef(null);
   const btnRef = useRef(null);
   const imgRef = useRef(null);
+  const copyBtnRef = useRef(null);
   const [copied, setCopied] = useState(false);
 
   const contractAddress = "0x52E0D3c27CC9e3607C1Ca7914b9049bE3d5e9C41";
@@ -56,6 +57,17 @@ export default function Header() {
           ease: Power3.easeOut,
         },
         "<25%"
+      )
+      .fromTo(
+        copyBtnRef.current,
+        { opacity: 0, scale: 0.5 },
+        {
+          opacity: 1,
+          scale: 1,
+          duration: 1.5,
+          ease: Power3.easeOut,
+        },
+        "<25%"
       );
   }, []);
 
@@ -80,7 +92,11 @@ export default function Header() {
               Join the Galactic Mission
             </a>
             <div className="copy-contract">
-              <button className="btn-copy" onClick={copyToClipboard}>
+              <button
+                className="btn-copy"
+                ref={copyBtnRef}
+                onClick={copyToClipboard}
+              >
                 Copy Contract Address
               </button>
               {copied && <span className="copied-msg">Copied!</span>}
