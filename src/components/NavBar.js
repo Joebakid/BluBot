@@ -102,17 +102,17 @@ function NavBar() {
           </li>
 
           <li>
-             <a
-            className="navbar-hover-effect"
-            href="https://dexscreener.com/base/0xc4a0ca9bd929000333bf339c26a913c62f0e1439"
-            rel="noopener noreferrer"
-            target="_blank"
-          >
-            <p className="dexscreen">
-              {" "}
-              <b>DEX</b>SCREENER
-            </p>
-          </a>
+            <a
+              className="navbar-hover-effect"
+              href="https://dexscreener.com/base/0xc4a0ca9bd929000333bf339c26a913c62f0e1439"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              <p className="dexscreen">
+                {" "}
+                <b>DEX</b>SCREENER
+              </p>
+            </a>
           </li>
           <li>
             <a
@@ -121,8 +121,12 @@ function NavBar() {
               rel="noopener noreferrer"
               target="_blank"
             >
-           <img className="dextool-icon" src="/img/Brand_DEXTools_Light.png" alt="DEXTools Logo" />
-   {/* <p className="dexscreen">
+              <img
+                className="dextool-icon"
+                src="/img/Brand_DEXTools_Light.png"
+                alt="DEXTools Logo"
+              />
+              {/* <p className="dexscreen">
               {" "}
               <b>DEX</b>TooLs
             </p> */}
@@ -167,7 +171,17 @@ function NavBar() {
               rel="noopener noreferrer"
               target="_blank"
             >
-               <img className="x-icon" src="/img/x.png" alt="DEXTools Logo" />
+              <img className="x-icon" src="/img/x.png" alt="DEXTools Logo" />
+            </a>
+          </li>
+
+          <li>
+            <a
+              className="navbar-hover-effect"
+              href="#bot"
+              rel="noopener noreferrer"
+            >
+              BOT
             </a>
           </li>
 
