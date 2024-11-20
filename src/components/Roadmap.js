@@ -87,7 +87,7 @@ const Roadmap = () => {
           <RoadmapPhase
             title="Colonizing The Moon"
             phase="Phase 3:"
-            description="Release Exclusive Blu NFTs And Unlock Community Rewards"
+            description="Release Exclusive Blu NFTs And Unlock Community Rewards and Launch Telegram trading Bot"
             bgColor="#2e2e3a"
             index={0.2}
           />
