@@ -79,7 +79,9 @@ const Roadmap = () => {
           <RoadmapPhase
             title="Galactic Conquest"
             phase="Phase 2:"
-            description="Establish Partnerships And Secure Listings On Major Exchanges."
+            description="Release Exclusive Blu NFTs And Unlock Community Rewards and Launch Telegram trading Bot
+            
+           "
             bgColor="#48b1c4"
             index={0.1}
           />
@@ -87,7 +89,7 @@ const Roadmap = () => {
           <RoadmapPhase
             title="Colonizing The Moon"
             phase="Phase 3:"
-            description="Release Exclusive Blu NFTs And Unlock Community Rewards and Launch Telegram trading Bot"
+            description=" Establish Partnerships And Secure Listings On Major Exchanges."
             bgColor="#2e2e3a"
             index={0.2}
           />
