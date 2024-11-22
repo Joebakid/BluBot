@@ -7,6 +7,7 @@ export default function Header() {
   const btnRef = useRef(null);
   const imgRef = useRef(null);
   const copyBtnRef = useRef(null);
+  const cardRefs = useRef([]);
   const [copied, setCopied] = useState(false);
 
   const contractAddress = "0x52E0D3c27CC9e3607C1Ca7914b9049bE3d5e9C41";
@@ -18,58 +19,71 @@ export default function Header() {
     });
   };
 
-  useEffect(() => {
-    const tl = gsap.timeline();
-    tl.fromTo(
-      titleRef.current,
-      { opacity: 0, y: "-30%" },
-      { opacity: 1, y: "0%", duration: 2, ease: Power3.easeOut }
+  function Card({ text, index }) {
+    return (
+      <div
+        className="card-faqs"
+        ref={(el) => (cardRefs.current[index] = el)}
+      >
+        <p>{text}</p>
+      </div>
+    );
+  }
+
+ useEffect(() => {
+  const tl = gsap.timeline();
+  tl.fromTo(
+    titleRef.current,
+    { autoAlpha: 0, y: "-30%" },
+    { autoAlpha: 1, y: "0%", duration: 2, ease: Power3.easeOut }
+  )
+    .fromTo(
+      subHeadingRef.current,
+      { autoAlpha: 0, y: "30%" },
+      {
+        autoAlpha: 1,
+        y: "0%",
+        duration: 2,
+        ease: Power3.easeOut,
+      },
+      "<25%"
     )
-      .fromTo(
-        subHeadingRef.current,
-        { opacity: 0, y: "30%" },
-        {
-          opacity: 1,
-          y: "0%",
-          duration: 2,
-          ease: Power3.easeOut,
-        },
-        "<25%"
-      )
-      .fromTo(
-        btnRef.current,
-        { opacity: 0, y: "30%" },
-        {
-          opacity: 1,
-          y: "0%",
-          duration: 1,
-          ease: Power3.easeOut,
-        },
-        "<25%"
-      )
-      .fromTo(
-        imgRef.current,
-        { opacity: 0, x: "30%" },
-        {
-          opacity: 1,
-          x: "0%",
-          duration: 1.5,
-          ease: Power3.easeOut,
-        },
-        "<25%"
-      )
-      .fromTo(
-        copyBtnRef.current,
-        { opacity: 0, scale: 0.5 },
-        {
-          opacity: 1,
-          scale: 1,
-          duration: 1.5,
-          ease: Power3.easeOut,
-        },
-        "<25%"
-      );
-  }, []);
+    .fromTo(
+      btnRef.current,
+      { autoAlpha: 0, y: "30%" },
+      {
+        autoAlpha: 1,
+        y: "0%",
+        duration: 1,
+        ease: Power3.easeOut,
+      },
+      "<25%"
+    )
+    .fromTo(
+      copyBtnRef.current,
+      { autoAlpha: 0, scale: 0.5 },
+      {
+        autoAlpha: 1,
+        scale: 1,
+        duration: 1.5,
+        ease: Power3.easeOut,
+      },
+      "<25%"
+    )
+    .fromTo(
+      cardRefs.current,
+      { autoAlpha: 0, y: "50%" },
+      {
+        autoAlpha: 1,
+        y: "0%",
+        duration: 1,
+        ease: Power3.easeOut,
+        stagger: 0.2,
+      },
+      "<25%"
+    );
+}, []);
+
 
   return (
     <section>
@@ -77,10 +91,12 @@ export default function Header() {
         <div className="grid-header" id="header">
           <div className="flex-header">
             <h1 className="title-lg" ref={titleRef}>
-              The Token from Outer Space
+              Blu Telegram{" "}
+              <span className="color-title-header">Trading Bot</span>
             </h1>
-            <p className="text-lg" ref={subHeadingRef}>
-              Meet Blu a degenerate alien in search of new frens!
+            <p className="text-lg color-text-header" ref={subHeadingRef}>
+              Welcome to the Telegram Trading Bot page. This bot is designed to
+              simplify crypto trading by integrating directly with Telegram.
             </p>
             <a
               className="btn"
@@ -89,27 +105,26 @@ export default function Header() {
               ref={btnRef}
               rel="noreferrer"
             >
-              Join the Galactic Mission
+              Use Bot
             </a>
-            <div className="copy-contract">
-              <button
-                className="btn-copy"
-                ref={copyBtnRef}
-                onClick={copyToClipboard}
-              >
-                Copy Contract Address
-              </button>
-              {copied && <span className="copied-msg">Copied!</span>}
+            <div className="flex-card-header">
+              <Card
+                text="Real-time trading alerts for your favorite tokens."
+                index={0}
+              />
+              <Card
+                text="Seamless integration with your trading accounts."
+                index={1}
+              />
+              <Card
+                text="Secure and efficient token management."
+                index={2}
+              />
+              <Card
+                text="User-friendly and built for the future of DeFi."
+                index={3}
+              />
             </div>
-          </div>
-
-          <div>
-            <img
-              className="header-img flip-horizontal width"
-              src="img/welcome-img.png"
-              alt="welcome img"
-              ref={imgRef}
-            />
           </div>
         </div>
       </div>

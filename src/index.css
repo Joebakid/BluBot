@@ -32,6 +32,46 @@ html {
   scroll-behavior: smooth;
 }
 
+/* BOT-HEADER */
+.color-title-header {
+  color: #66b2ca;
+}
+
+.color-text-header {
+  color: rgb(177, 171, 171);
+}
+
+.flex-card-header {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-top: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+/* ////////////////////gsap content flash///// */
+.card-faqs,
+.title-lg,
+.text-lg,
+.btn {
+  opacity: 0;
+  visibility: hidden; /* Ensures the elements are not interactable */
+}
+
+.no-js .card-faqs,
+.no-js .title-lg,
+.no-js .text-lg,
+.no-js .btn {
+  opacity: 1;
+  visibility: visible;
+}
+
+header {
+  width: 100vh;
+}
+
 /* CONTRACT */
 
 .copy-contract {
@@ -166,7 +206,7 @@ a {
 }
 
 .container {
-  width: 90%;
+  width: 80%;
   margin: 0 auto;
   padding: 20px 0;
   overflow-x: hidden;
@@ -277,10 +317,13 @@ a {
   flex-direction: column;
   gap: 20px;
   padding: 100px 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 .grid-header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
   justify-content: center;
   align-items: center;
   /* height: 100vh; */
@@ -292,10 +335,10 @@ a {
   border: 1.32708px solid #000000;
   align-items: center;
   justify-content: center;
-  padding: 10px;
+  padding: 16px;
   text-decoration: none;
   border-radius: 10px;
-  width: 70%;
+  width: 80%;
   gap: 10px;
   font-size: 1.15rem;
 }
@@ -756,10 +799,19 @@ hr {
 .card-faqs {
   background-color: #48d6d21a;
   border: 2px solid #b94fb6;
-  border-radius: 8px;
+  border-radius: 30px;
   overflow: hidden;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
+  padding: 40px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: #66b2ca33;
 }
 
 .faq-header {
@@ -807,6 +859,9 @@ hr {
 
 /* MEDIA QUERRY */
 @media (max-width: 760px) {
+  .flex-card-header {
+    flex-grow: wrap;
+  }
   /*  */
   .btn-copy {
     width: 100%;
@@ -943,6 +998,13 @@ hr {
   }
   .about-text {
     font-size: 1.5rem;
+  }
+
+  .container {
+    width: 60%;
+    margin: 0 auto;
+    padding: 20px 0;
+    overflow-x: hidden;
   }
 }
 

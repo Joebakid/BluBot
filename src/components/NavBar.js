@@ -58,46 +58,10 @@ function NavBar() {
           <li>
             <a
               className="logo display-none-mobile"
-              href="#header"
+              href="https://basedblualien.com/"
               rel="noopener noreferrer"
             >
               Blu
-            </a>
-          </li>
-          <li>
-            <a
-              className="navbar-hover-effect"
-              href="#about"
-              rel="noopener noreferrer"
-            >
-              About Us
-            </a>
-          </li>
-          <li>
-            <a
-              className="navbar-hover-effect"
-              href="#roadmap"
-              rel="noopener noreferrer"
-            >
-              RoadMap
-            </a>
-          </li>
-          <li>
-            <a
-              className="navbar-hover-effect"
-              href="#tokenomics"
-              rel="noopener noreferrer"
-            >
-              Tokenomics
-            </a>
-          </li>
-          <li>
-            <a
-              className="navbar-hover-effect"
-              href="#HowToBuy"
-              rel="noopener noreferrer"
-            >
-              How To Buy
             </a>
           </li>
 
@@ -181,7 +145,7 @@ function NavBar() {
               href="#bot"
               rel="noopener noreferrer"
             >
-              BOT
+              How To Use
             </a>
           </li>
 
@@ -191,7 +155,7 @@ function NavBar() {
               rel="noopener noreferrer"
               href="https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0x52e0d3c27cc9e3607c1ca7914b9049be3d5e9c41"
             >
-              Buy Now
+              Buy Blu
             </a>
           </li>
         </ul>
