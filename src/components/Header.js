@@ -21,69 +21,135 @@ export default function Header() {
 
   function Card({ text, index }) {
     return (
-      <div
-        className="card-faqs"
-        ref={(el) => (cardRefs.current[index] = el)}
-      >
+      <div className="card-faqs" ref={(el) => (cardRefs.current[index] = el)}>
         <p>{text}</p>
       </div>
     );
   }
 
- useEffect(() => {
-  const tl = gsap.timeline();
-  tl.fromTo(
-    titleRef.current,
-    { autoAlpha: 0, y: "-30%" },
-    { autoAlpha: 1, y: "0%", duration: 2, ease: Power3.easeOut }
-  )
-    .fromTo(
-      subHeadingRef.current,
-      { autoAlpha: 0, y: "30%" },
-      {
-        autoAlpha: 1,
-        y: "0%",
-        duration: 2,
-        ease: Power3.easeOut,
-      },
-      "<25%"
-    )
-    .fromTo(
-      btnRef.current,
-      { autoAlpha: 0, y: "30%" },
-      {
-        autoAlpha: 1,
-        y: "0%",
-        duration: 1,
-        ease: Power3.easeOut,
-      },
-      "<25%"
-    )
-    .fromTo(
-      copyBtnRef.current,
-      { autoAlpha: 0, scale: 0.5 },
-      {
-        autoAlpha: 1,
-        scale: 1,
-        duration: 1.5,
-        ease: Power3.easeOut,
-      },
-      "<25%"
-    )
-    .fromTo(
-      cardRefs.current,
-      { autoAlpha: 0, y: "50%" },
-      {
-        autoAlpha: 1,
-        y: "0%",
-        duration: 1,
-        ease: Power3.easeOut,
-        stagger: 0.2,
-      },
-      "<25%"
-    );
-}, []);
+  function btn(e) {
+    e.preventDefault();
 
+    // Check if an alert already exists to prevent duplication
+    if (document.querySelector(".custom-alert")) return;
+
+    // Create a div for the custom alert
+    const alertDiv = document.createElement("div");
+    alertDiv.className = "custom-alert";
+    alertDiv.innerHTML = `
+    <p>
+      <strong>Trading Bot Development in Progress:</strong> Stay tuned for updates as we bring you a seamless and efficient DeFi experience!
+    </p>
+  `;
+
+    // Append the alert to the body
+    document.body.appendChild(alertDiv);
+
+    // Remove the alert after 4 seconds
+    setTimeout(() => {
+      const existingAlert = document.querySelector(".custom-alert");
+      if (existingAlert) {
+        existingAlert.remove();
+      }
+    }, 4000);
+
+    // Add styles dynamically for the alert
+    const style = document.createElement("style");
+    style.type = "text/css";
+    style.innerHTML = `
+    .custom-alert {
+      position: fixed;
+      top: 20px;
+    
+      right: 20px; /* Position the alert on the right side */
+      width: 300px; /* Set a fixed width */
+      background-color: #0d6efd;
+      color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+      animation: fadeInOut 4s ease-in-out;
+      z-index: 1000;
+      text-align: center;
+    }
+
+    .custom-alert p {
+      margin: 0;
+      font-size: 0.9rem; /* Adjust text size */
+    }
+
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      10%,
+      90% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+    }
+  `;
+    document.head.appendChild(style);
+  }
+
+  useEffect(() => {
+    const tl = gsap.timeline();
+    tl.fromTo(
+      titleRef.current,
+      { autoAlpha: 0, y: "-30%" },
+      { autoAlpha: 1, y: "0%", duration: 2, ease: Power3.easeOut }
+    )
+      .fromTo(
+        subHeadingRef.current,
+        { autoAlpha: 0, y: "30%" },
+        {
+          autoAlpha: 1,
+          y: "0%",
+          duration: 2,
+          ease: Power3.easeOut,
+        },
+        "<25%"
+      )
+      .fromTo(
+        btnRef.current,
+        { autoAlpha: 0, y: "30%" },
+        {
+          autoAlpha: 1,
+          y: "0%",
+          duration: 1,
+          ease: Power3.easeOut,
+        },
+        "<25%"
+      )
+      .fromTo(
+        copyBtnRef.current,
+        { autoAlpha: 0, scale: 0.5 },
+        {
+          autoAlpha: 1,
+          scale: 1,
+          duration: 1.5,
+          ease: Power3.easeOut,
+        },
+        "<25%"
+      )
+      .fromTo(
+        cardRefs.current,
+        { autoAlpha: 0, y: "50%" },
+        {
+          autoAlpha: 1,
+          y: "0%",
+          duration: 1,
+          ease: Power3.easeOut,
+          stagger: 0.2,
+        },
+        "<25%"
+      );
+  }, []);
 
   return (
     <section>
@@ -101,9 +167,10 @@ export default function Header() {
             <a
               className="btn"
               target="_blank"
-              href="https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0x52e0d3c27cc9e3607c1ca7914b9049be3d5e9c41"
+              href="#btn"
               ref={btnRef}
               rel="noreferrer"
+              onClick={btn}
             >
               Use Bot
             </a>
@@ -116,10 +183,7 @@ export default function Header() {
                 text="Seamless integration with your trading accounts."
                 index={1}
               />
-              <Card
-                text="Secure and efficient token management."
-                index={2}
-              />
+              <Card text="Secure and efficient token management." index={2} />
               <Card
                 text="User-friendly and built for the future of DeFi."
                 index={3}
