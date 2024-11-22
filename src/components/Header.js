@@ -172,7 +172,7 @@ export default function Header() {
               rel="noreferrer"
               // onClick={btn}
             >
-              Use Bot
+              Launch App
             </a>
             <div className="flex-card-header">
               <Card
