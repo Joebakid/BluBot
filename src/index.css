@@ -76,8 +76,8 @@ header {
 .guide-section {
   margin-top: 2rem;
   padding: 1.5rem;
-  background-color: #66b2ca;
-  border: 1px solid #ddd;
+  background: #807ad4;
+  border: 2px solid #b94fb6;
   border-radius: 8px;
   text-align: center;
   display: flex;
