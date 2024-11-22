@@ -859,6 +859,14 @@ hr {
 
 /* MEDIA QUERRY */
 @media (max-width: 760px) {
+  .title-lg {
+    font-size: 2rem;
+  }
+
+  .text-lg {
+    font-size: 1.5rem;
+  }
+
   .flex-card-header {
     flex-grow: wrap;
   }
