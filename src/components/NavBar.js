@@ -3,8 +3,7 @@ import { gsap } from "gsap";
 import { Power3 } from "gsap";
 
 function NavBar() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isSticky, setIsSticky] = useState(false);
+  const [isSticky, setIsSticky] = useState(false); // State to toggle sticky class
   const navRef = useRef(null);
 
   useEffect(() => {
@@ -18,8 +17,8 @@ function NavBar() {
 
     // Scroll event listener for sticky effect
     const handleScroll = () => {
-      const headerHeight = document.querySelector(".header").offsetHeight;
-      if (window.scrollY > headerHeight) {
+      if (window.scrollY > 50) {
+        // Start showing sticky bar after scrolling 50px
         setIsSticky(true);
       } else {
         setIsSticky(false);
@@ -27,18 +26,15 @@ function NavBar() {
     };
 
     window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
   }, []);
-
-  // Toggle the menu on button click
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
 
   return (
     <nav
       ref={navRef}
-      className={`line ${isSticky ? "sticky" : ""}`} // Apply sticky class conditionally
+      className={`line ${isSticky ? "sticky" : ""}`} // Add sticky class based on state
     >
       <div className="container">
         {/* Flex container for logo and hamburger */}
@@ -46,15 +42,15 @@ function NavBar() {
           <a href="logo" className="logo display-none-desktop">
             Alien
           </a>
-          <div className="hamburger" onClick={toggleMenu}>
-            <div className={`bar ${isOpen ? "open" : ""}`}></div>
-            <div className={`bar ${isOpen ? "open" : ""}`}></div>
-            <div className={`bar ${isOpen ? "open" : ""}`}></div>
+          <div className="hamburger">
+            <div className="bar"></div>
+            <div className="bar"></div>
+            <div className="bar"></div>
           </div>
         </div>
 
         {/* Navigation menu */}
-        <ul className={`flex-navBar ${isOpen ? "show" : ""}`}>
+        <ul className="flex-navBar">
           <li>
             <a
               className="logo display-none-mobile"
@@ -64,7 +60,6 @@ function NavBar() {
               Blu
             </a>
           </li>
-
           <li>
             <a
               className="navbar-hover-effect"
@@ -90,13 +85,8 @@ function NavBar() {
                 src="/img/Brand_DEXTools_Light.png"
                 alt="DEXTools Logo"
               />
-              {/* <p className="dexscreen">
-              {" "}
-              <b>DEX</b>TooLs
-            </p> */}
             </a>
           </li>
-
           <li>
             <a
               className="navbar-hover-effect"
@@ -107,7 +97,6 @@ function NavBar() {
               Whitepaper
             </a>
           </li>
-
           <li>
             <a
               className="navbar-hover-effect"
@@ -138,7 +127,6 @@ function NavBar() {
               <img className="x-icon" src="/img/x.png" alt="DEXTools Logo" />
             </a>
           </li>
-
           <li>
             <a
               className="navbar-hover-effect"
@@ -148,7 +136,6 @@ function NavBar() {
               How To Use
             </a>
           </li>
-
           <li>
             <a
               className="btn-navBar navbar-hover-effect"
