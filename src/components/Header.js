@@ -210,6 +210,11 @@ export default function Header() {
             documentation.
           </p>
         </div>
+
+        <div className="text-center">
+          <p>Copyright © 2024 Blu. All rights reserved.</p>
+          <a href="mailto:info@basedblualien.com">info@basedblualien.com</a>
+        </div>
       </div>
     </section>
   );
