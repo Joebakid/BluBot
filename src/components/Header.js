@@ -191,6 +191,25 @@ export default function Header() {
             </div>
           </div>
         </div>
+
+        {/* Basic Guide Section */}
+        <div id="bot" className="guide-section">
+          <h2>How to Use BluBot</h2>
+          <ol>
+            <li>Install Telegram and log in to your account.</li>
+            <li>click on the provided link to access the bot.</li>
+            <li>Start the bot by clicking the "Start" button in the chat.</li>
+            <li>Follow the on-screen instructions to connect your wallet.</li>
+            <li>Use commands to trade, manage tokens, or check market data.</li>
+            <li>
+              Stay updated with real-time trading alerts and notifications.
+            </li>
+          </ol>
+          <p>
+            For further assistance, contact our support team or visit our
+            documentation.
+          </p>
+        </div>
       </div>
     </section>
   );

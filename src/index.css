@@ -72,6 +72,41 @@ header {
   width: 100vh;
 }
 
+/* //////////////////////////////////////////////////////// */
+.guide-section {
+  margin-top: 2rem;
+  padding: 1.5rem;
+  background-color: #66b2ca;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guide-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.guide-section ol {
+  padding-left: 1.5rem;
+}
+
+.guide-section ol li {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.guide-section p {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #47129b;
+}
+
 /* CONTRACT */
 
 .copy-contract {
