@@ -156,6 +156,7 @@ function NavBar() {
           <li>
             <a
               className="btn-navBar navbar-hover-effect"
+              target="_blank"
               rel="noopener noreferrer"
               href="https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0x52e0d3c27cc9e3607c1ca7914b9049be3d5e9c41"
             >
@@ -167,6 +168,7 @@ function NavBar() {
               className="btn-navBar navbar-hover-effect"
               rel="noopener noreferrer"
               href="#Doc"
+              target="_blank"
             >
               Documentation
             </a>
