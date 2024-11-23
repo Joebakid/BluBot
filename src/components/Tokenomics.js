@@ -41,7 +41,7 @@ function TokenData({ number, title, text }) {
 
 function Tokenomics() {
   return (
-    <section className="bg-color" id="tokenomics">
+    <section className="bg-color" id="bot">
       <div className="container">
         {" "}
         <h1 className="Tokenomics-title">HOW TO USE</h1>
