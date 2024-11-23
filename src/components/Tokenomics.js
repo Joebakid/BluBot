@@ -65,7 +65,7 @@ function Tokenomics() {
             <TokenData
               number="04"
               title="Use Commands"
-              text="5
+              text="
 Use commands to trade, manage tokens, or check market data"
             />
             <TokenData
