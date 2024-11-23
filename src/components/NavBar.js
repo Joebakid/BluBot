@@ -162,6 +162,15 @@ function NavBar() {
               Buy Blu
             </a>
           </li>
+          <li>
+            <a
+              className="btn-navBar navbar-hover-effect"
+              rel="noopener noreferrer"
+              href="#Doc"
+            >
+              Documentation
+            </a>
+          </li>
         </ul>
       </div>
     </nav>

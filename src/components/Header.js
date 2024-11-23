@@ -1,5 +1,6 @@
 import React, { useEffect, useRef, useState } from "react";
 import { gsap, Power3 } from "gsap";
+import Tokenomics from "./Tokenomics";
 
 export default function Header() {
   const titleRef = useRef(null);
@@ -193,7 +194,7 @@ export default function Header() {
         </div>
 
         {/* Basic Guide Section */}
-        <div id="bot" className="guide-section">
+        {/* <div id="bot" className="guide-section">
           <h2>How to Use BluBot</h2>
           <ol>
             <li>Install Telegram and log in to your account.</li>
@@ -209,7 +210,9 @@ export default function Header() {
             For further assistance, contact our support team or visit our
             documentation.
           </p>
-        </div>
+        </div> */}
+
+        <Tokenomics />
 
         <div className="text-center">
           <p>Copyright © 2024 Blu. All rights reserved.</p>
