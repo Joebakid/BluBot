@@ -59,7 +59,7 @@ html {
   -moz-border-radius: 20px;
   -ms-border-radius: 20px;
   -o-border-radius: 20px;
-   background-color: #48d6d21a;
+  background-color: #48d6d21a;
 }
 
 /* ////////////////////gsap content flash///// */
@@ -905,6 +905,9 @@ hr {
 
 /* MEDIA QUERRY */
 @media (max-width: 760px) {
+  .container {
+    width: 90%;
+  }
   .title-lg {
     font-size: 2rem;
   }
