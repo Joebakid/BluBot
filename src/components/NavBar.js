@@ -31,6 +31,10 @@ function NavBar() {
     };
   }, []);
 
+  function DoNothing(e) {
+    e.preventDefault();
+  }
+
   // Toggle the menu on button click
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -153,6 +157,18 @@ function NavBar() {
             </a>
           </li>
 
+  <li>
+            <a
+              className="navbar-hover-effect"
+              rel="noopener noreferrer"
+              href="#Doc"
+              target="_blank"
+              onClick={DoNothing}
+            >
+              Documentation
+            </a>
+          </li>
+
           <li>
             <a
               className="btn-navBar navbar-hover-effect"
@@ -163,16 +179,7 @@ function NavBar() {
               Buy Blu
             </a>
           </li>
-          <li>
-            <a
-              className="btn-navBar navbar-hover-effect"
-              rel="noopener noreferrer"
-              href="#Doc"
-              target="_blank"
-            >
-              Documentation
-            </a>
-          </li>
+        
         </ul>
       </div>
     </nav>

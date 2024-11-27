@@ -254,7 +254,7 @@ a {
 .container {
   width: 80%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 20px 10px;
   overflow-x: hidden;
 }
 
@@ -296,6 +296,7 @@ a {
   -ms-border-radius: 10px;
   -o-border-radius: 10px;
   font-size: small;
+  /* margin-right: 10px; */
 }
 
 .flex-navBar {
@@ -907,6 +908,7 @@ hr {
 @media (max-width: 760px) {
   .container {
     width: 90%;
+    
   }
   .title-lg {
     font-size: 2rem;
@@ -1058,9 +1060,9 @@ hr {
   }
 
   .container {
-    width: 60%;
+    width: 65%;
     margin: 0 auto;
-    padding: 20px 0;
+    padding: 20px 10px;
     overflow-x: hidden;
   }
 }

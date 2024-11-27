@@ -28,75 +28,75 @@ export default function Header() {
     );
   }
 
-  // function btn(e) {
-  //   e.preventDefault();
+  function btn(e) {
+    e.preventDefault();
 
-  //   // Check if an alert already exists to prevent duplication
-  //   if (document.querySelector(".custom-alert")) return;
+    // Check if an alert already exists to prevent duplication
+    if (document.querySelector(".custom-alert")) return;
 
-  //   // Create a div for the custom alert
-  //   const alertDiv = document.createElement("div");
-  //   alertDiv.className = "custom-alert";
-  //   alertDiv.innerHTML = `
-  //   <p>
-  //     <strong>Trading Bot Development in Progress:</strong> Stay tuned for updates as we bring you a seamless and efficient DeFi experience!
-  //   </p>
-  // `;
+    // Create a div for the custom alert
+    const alertDiv = document.createElement("div");
+    alertDiv.className = "custom-alert";
+    alertDiv.innerHTML = `
+    <p>
+      <strong>Trading Bot Development in Progress:</strong> Stay tuned for updates as we bring you a seamless and efficient DeFi experience!
+    </p>
+  `;
 
-  //   // Append the alert to the body
-  //   document.body.appendChild(alertDiv);
+    // Append the alert to the body
+    document.body.appendChild(alertDiv);
 
-  //   // Remove the alert after 4 seconds
-  //   setTimeout(() => {
-  //     const existingAlert = document.querySelector(".custom-alert");
-  //     if (existingAlert) {
-  //       existingAlert.remove();
-  //     }
-  //   }, 4000);
+    // Remove the alert after 4 seconds
+    setTimeout(() => {
+      const existingAlert = document.querySelector(".custom-alert");
+      if (existingAlert) {
+        existingAlert.remove();
+      }
+    }, 4000);
 
-  //   // Add styles dynamically for the alert
-  //   const style = document.createElement("style");
-  //   style.type = "text/css";
-  //   style.innerHTML = `
-  //   .custom-alert {
-  //     position: fixed;
-  //     top: 20px;
+    // Add styles dynamically for the alert
+    const style = document.createElement("style");
+    style.type = "text/css";
+    style.innerHTML = `
+    .custom-alert {
+      position: fixed;
+      top: 20px;
 
-  //     right: 20px; /* Position the alert on the right side */
-  //     width: 300px; /* Set a fixed width */
-  //     background-color: #0d6efd;
-  //     color: #ffffff;
-  //     padding: 15px;
-  //     border-radius: 8px;
-  //     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
-  //     animation: fadeInOut 4s ease-in-out;
-  //     z-index: 1000;
-  //     text-align: center;
-  //   }
+      right: 20px; /* Position the alert on the right side */
+      width: 300px; /* Set a fixed width */
+      background-color: #0d6efd;
+      color: #ffffff;
+      padding: 15px;
+      border-radius: 8px;
+      box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+      animation: fadeInOut 4s ease-in-out;
+      z-index: 1000;
+      text-align: center;
+    }
 
-  //   .custom-alert p {
-  //     margin: 0;
-  //     font-size: 0.9rem; /* Adjust text size */
-  //   }
+    .custom-alert p {
+      margin: 0;
+      font-size: 0.9rem; /* Adjust text size */
+    }
 
-  //   @keyframes fadeInOut {
-  //     0% {
-  //       opacity: 0;
-  //       transform: translateX(20px);
-  //     }
-  //     10%,
-  //     90% {
-  //       opacity: 1;
-  //       transform: translateX(0);
-  //     }
-  //     100% {
-  //       opacity: 0;
-  //       transform: translateX(20px);
-  //     }
-  //   }
-  // `;
-  //   document.head.appendChild(style);
-  // }
+    @keyframes fadeInOut {
+      0% {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+      10%,
+      90% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+      100% {
+        opacity: 0;
+        transform: translateX(20px);
+      }
+    }
+  `;
+    document.head.appendChild(style);
+  }
 
   useEffect(() => {
     const tl = gsap.timeline();
@@ -168,10 +168,10 @@ export default function Header() {
             <a
               className="btn"
               target="_blank"
-              href="https://t.me/alienblubot"
+              // href="https://t.me/alienblubot"
               ref={btnRef}
               rel="noreferrer"
-              // onClick={btn}
+              onClick={btn}
             >
               Launch App
             </a>
