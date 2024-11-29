@@ -388,6 +388,7 @@ a {
   width: 80%;
   gap: 10px;
   font-size: 1.15rem;
+  cursor: pointer;
 }
 
 .btn:hover {
@@ -908,7 +909,6 @@ hr {
 @media (max-width: 760px) {
   .container {
     width: 90%;
-    
   }
   .title-lg {
     font-size: 2rem;
