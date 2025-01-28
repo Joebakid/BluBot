@@ -171,7 +171,7 @@ export default function Header() {
               href="https://t.me/alienblubot"
               ref={btnRef}
               rel="noreferrer"
-              onClick={btn}
+              // onClick={btn}
             >
               Launch App
             </a>
