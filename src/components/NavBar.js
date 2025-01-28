@@ -1,4 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
+import { Link, NavLink } from "react-router-dom"; // Import Link and NavLink from react-router-dom
 import { gsap } from "gsap";
 import { Power3 } from "gsap";
 
@@ -18,8 +19,7 @@ function NavBar() {
 
     const handleScroll = () => {
       if (window.scrollY > 50) {
-        // Start showing sticky bar after scrolling 50px
-        setIsSticky(true);
+        setIsSticky(true); // Apply sticky class after scrolling 50px
       } else {
         setIsSticky(false);
       }
@@ -30,10 +30,6 @@ function NavBar() {
       window.removeEventListener("scroll", handleScroll);
     };
   }, []);
-
-  function DoNothing(e) {
-    e.preventDefault();
-  }
 
   // Toggle the menu on button click
   const toggleMenu = () => {
@@ -46,14 +42,10 @@ function NavBar() {
       className={`line ${isSticky ? "sticky" : ""}`} // Apply sticky class conditionally
     >
       <div className="container">
-        {/* Flex container for logo and hamburger */}
         <div className="logo-hamburger">
-          <a
-            href="https://basedblualien.com/"
-            className="logo display-none-desktop"
-          >
+          <Link to="/" className="logo display-none-desktop">
             Blu
-          </a>
+          </Link>
           <div className="hamburger" onClick={toggleMenu}>
             <div className={`bar ${isOpen ? "open" : ""}`}></div>
             <div className={`bar ${isOpen ? "open" : ""}`}></div>
@@ -61,47 +53,38 @@ function NavBar() {
           </div>
         </div>
 
-        {/* Navigation menu */}
         <ul className={`flex-navBar ${isOpen ? "show" : ""}`}>
           <li>
-            <a
-              className="logo display-none-mobile"
-              href="https://basedblualien.com/"
-              rel="noopener noreferrer"
-            >
+            <Link to="/" className="logo display-none-mobile">
               Blu
-            </a>
+            </Link>
           </li>
 
           <li>
             <a
               className="navbar-hover-effect"
               href="https://dexscreener.com/base/0xc4a0ca9bd929000333bf339c26a913c62f0e1439"
-              rel="noopener noreferrer"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <p className="dexscreen">
-                {" "}
                 <b>DEX</b>SCREENER
               </p>
             </a>
           </li>
+
           <li>
             <a
               className="navbar-hover-effect"
               href="https://www.dextools.io/app/en/base/pair-explorer/0xc4a0ca9bd929000333bf339c26a913c62f0e1439?chart=true"
-              rel="noopener noreferrer"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <img
                 className="dextool-icon"
                 src="/img/Brand_DEXTools_Light.png"
                 alt="DEXTools Logo"
               />
-              {/* <p className="dexscreen">
-              {" "}
-              <b>DEX</b>TooLs
-            </p> */}
             </a>
           </li>
 
@@ -120,8 +103,8 @@ function NavBar() {
             <a
               className="navbar-hover-effect"
               href="https://t.me/+8UZkauZX57YwNzEy"
-              rel="noopener noreferrer"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <svg
                 width="25"
@@ -136,50 +119,39 @@ function NavBar() {
               </svg>
             </a>
           </li>
+
           <li>
             <a
               className="navbar-hover-effect"
               href="https://x.com/BasedBluAlien"
-              rel="noopener noreferrer"
               target="_blank"
+              rel="noopener noreferrer"
             >
-              <img className="x-icon" src="/img/x.png" alt="DEXTools Logo" />
+              <img className="x-icon" src="/img/x.png" alt="X Icon" />
             </a>
           </li>
 
           <li>
-            <a
-              className="navbar-hover-effect"
-              href="#bot"
-              rel="noopener noreferrer"
-            >
-              How To Use
-            </a>
-          </li>
-
-  <li>
-            <a
-              className="navbar-hover-effect"
-              rel="noopener noreferrer"
-              href="#Doc"
-              target="_blank"
-              onClick={DoNothing}
+            <NavLink
+              to="/documentation" // React Router link
+              className={({ isActive }) =>
+                `navbar-hover-effect ${isActive ? "active" : ""}`
+              }
             >
               Documentation
-            </a>
+            </NavLink>
           </li>
 
           <li>
             <a
               className="btn-navBar navbar-hover-effect"
+              href="https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0x52e0d3c27cc9e3607c1ca7914b9049be3d5e9c41"
               target="_blank"
               rel="noopener noreferrer"
-              href="https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0x52e0d3c27cc9e3607c1ca7914b9049be3d5e9c41"
             >
               Buy Blu
             </a>
           </li>
-        
         </ul>
       </div>
     </nav>

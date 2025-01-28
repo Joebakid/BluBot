@@ -168,7 +168,7 @@ export default function Header() {
             <a
               className="btn"
               target="_blank"
-              // href="https://t.me/alienblubot"
+              href="https://t.me/alienblubot"
               ref={btnRef}
               rel="noreferrer"
               onClick={btn}

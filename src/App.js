@@ -4,8 +4,8 @@ import { gsap } from "gsap";
 import { Power3 } from "gsap";
 import Header from "./components/Header";
 import NavBar from "./components/NavBar";
- 
 import Preloader from "./components/Preloader";
+import Documentation from "./components/Documentation";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -34,12 +34,17 @@ function App() {
   }
 
   return (
-    <div className="App">
-      <div className="bg-img">
-        <NavBar ref={navRef} /> {/* Pass ref to NavBar */}
-        <Header />
+    <Router>
+      <div className="App">
+        <div className="bg-img">
+          <NavBar ref={navRef} /> {/* Pass ref to NavBar */}
+          <Routes>
+            <Route path="/" element={<Header />} />
+            <Route path="/documentation" element={<Documentation />} />
+          </Routes>
+        </div>
       </div>
-    </div>
+    </Router>
   );
 }
 
