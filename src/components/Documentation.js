@@ -43,24 +43,43 @@ function Documentation() {
   return (
     <section className="bg-color" id="bot">
       <div className="container">
-        <h1 className="Tokenomics-title">HOW TO USE</h1>
+        <h1 className="Tokenomics-title">Documentation</h1>
         <div className="bordercontainer-how-to-use">
           <div>
             <TokenData number="01" title="/start" text="Start the bot" />
             <TokenData number="02" title="/help" text="Show help" />
             <TokenData number="03" title="/menu" text="Show main menu" />
-            <TokenData number="04" title="/price" text="Check real-time token price" />
+            <TokenData
+              number="04"
+              title="/price"
+              text="Check real-time token price"
+            />
             <TokenData number="05" title="/swap" text="Swap tokens" />
             <TokenData number="06" title="/buy" text="Buy tokens" />
             <TokenData number="07" title="/sell" text="Sell tokens" />
-            <TokenData number="08" title="/balance" text="Check wallet balance" />
+            <TokenData
+              number="08"
+              title="/balance"
+              text="Check wallet balance"
+            />
             <TokenData number="09" title="/transfer" text="Transfer tokens" />
             <TokenData number="10" title="/gas" text="Get current gas prices" />
-            <TokenData number="11" title="/portfolio" text="View portfolio holdings" />
-            <TokenData number="12" title="/analytics" text="Advanced portfolio analytics" />
+            <TokenData
+              number="11"
+              title="/portfolio"
+              text="View portfolio holdings"
+            />
+            <TokenData
+              number="12"
+              title="/analytics"
+              text="Advanced portfolio analytics"
+            />
             <TokenData number="13" title="/risks" text="Track profit/loss" />
           </div>
-          <p>For further assistance, contact our support team or visit our documentation.</p>
+          <p>
+            For further assistance, contact our support team or visit our
+            documentation.
+          </p>
         </div>
       </div>
     </section>

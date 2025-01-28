@@ -55,9 +55,14 @@ function NavBar() {
 
         <ul className={`flex-navBar ${isOpen ? "show" : ""}`}>
           <li>
-            <Link to="/" className="logo display-none-mobile">
+            <a
+              href="https://basedblualien.com/"
+              target="_blank"
+              className="logo display-none-mobile"
+              rel="noopener noreferrer"
+            >
               Blu
-            </Link>
+            </a>
           </li>
 
           <li>
