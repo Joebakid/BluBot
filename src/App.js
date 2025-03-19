@@ -28,9 +28,9 @@ function App() {
     }
   }, [loading]);
 
-  if (loading) {
-    return <Preloader />;
-  }
+  // if (loading) {
+  //   return <Preloader />;
+  // }
 
   return (
     <Router>

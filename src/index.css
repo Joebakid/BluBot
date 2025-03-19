@@ -389,6 +389,7 @@ a {
   gap: 10px;
   font-size: 1.15rem;
   cursor: pointer;
+  color: gray;
 }
 
 .btn:hover {
@@ -719,6 +720,7 @@ a {
   background: #bbedf4;
   border: 1.32708px solid #000000;
   align-items: center;
+  color: gray;
   justify-content: center;
   padding: 10px 10px;
   text-decoration: none;
@@ -726,7 +728,7 @@ a {
   /* width: 70%; */
   gap: 10px;
   font-size: 1.15rem;
-  color: gray;
+  /* color: gray; */
 }
 
 hr {
