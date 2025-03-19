@@ -158,7 +158,7 @@ export default function Header() {
         <div className="grid-header" id="header">
           <div className="flex-header">
             <h1 className="title-lg" ref={titleRef}>
-              Blu Telegram{" "}
+              Chuck Telegram{" "}
               <span className="color-title-header">Trading Bot</span>
             </h1>
             <p className="text-lg color-text-header" ref={subHeadingRef}>
@@ -168,7 +168,7 @@ export default function Header() {
             <a
               className="btn"
               target="_blank"
-              href="https://t.me/alienblubot"
+              href="https://t.me/chucktradingbot"
               ref={btnRef}
               rel="noreferrer"
               // onClick={btn}
@@ -215,7 +215,7 @@ export default function Header() {
         <Tokenomics />
 
         <div className="text-center">
-          <p>Copyright © 2024 Blu. All rights reserved.</p>
+          <p>Copyright © 2024 Chuck. All rights reserved.</p>
           <a href="mailto:info@basedblualien.com">info@basedblualien.com</a>
         </div>
       </div>

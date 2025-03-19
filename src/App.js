@@ -6,16 +6,15 @@ import Header from "./components/Header";
 import NavBar from "./components/NavBar";
 import Preloader from "./components/Preloader";
 import Documentation from "./components/Documentation";
+import ScrollToTop from "./components/ScrollToTop"; // Import ScrollToTop
 
 function App() {
   const [loading, setLoading] = useState(true);
-  const navRef = useRef(null); // Reference for NavBar animation
+  const navRef = useRef(null);
 
   useEffect(() => {
-    // Simulate a loading delay (e.g., 5 seconds)
     const timer = setTimeout(() => setLoading(false), 5000);
-
-    return () => clearTimeout(timer); // Cleanup the timer
+    return () => clearTimeout(timer);
   }, []);
 
   useEffect(() => {
@@ -35,9 +34,10 @@ function App() {
 
   return (
     <Router>
+      <ScrollToTop /> {/* Ensures page scrolls to top on route change */}
       <div className="App">
         <div className="bg-img">
-          <NavBar ref={navRef} /> {/* Pass ref to NavBar */}
+          <NavBar ref={navRef} />
           <Routes>
             <Route path="/" element={<Header />} />
             <Route path="/documentation" element={<Documentation />} />

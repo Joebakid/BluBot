@@ -18,7 +18,7 @@ body {
   /* position: relative; */
   /* height: 100vh;
   width: 100vw; */
-  background: radial-gradient(circle, #2e287e, #1a0933, #05001b, #000000 90%);
+  background: rgb(0, 7, 44);
   /* overflow: hidden; */
   font-family: "Days One", "Franklin Gothic Medium", "Arial Narrow", Arial,
     sans-serif;
@@ -52,7 +52,7 @@ html {
 }
 
 .bordercontainer-how-to-use {
-  border: 2px solid #b94fb6;
+  border: 2px solid #bbedf4;
   padding: 40px;
   border-radius: 20px;
   -webkit-border-radius: 20px;
@@ -263,7 +263,6 @@ a {
 }
 
 .bg-img {
-  background: url("/public/img/background-img.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -281,8 +280,9 @@ a {
 
 .btn-navBar {
   display: flex;
-  background: linear-gradient(90deg, #f334a9 46.4%, #66b2ca 100%);
+  background: #bbedf4;
   border: 1.32708px solid #000000;
+  color: gray;
   align-items: center;
   justify-content: center;
   padding: 10px 20px;
@@ -335,7 +335,7 @@ a {
 
 .logo {
   font-size: 1.5rem;
-  color: #f334a9;
+  color: #bbedf4;
   text-decoration: none;
   padding: 10px;
 }
@@ -378,7 +378,7 @@ a {
 
 .btn {
   display: flex;
-  background: linear-gradient(90deg, #f334a9 46.4%, #66b2ca 100%);
+  background: #bbedf4;
   border: 1.32708px solid #000000;
   align-items: center;
   justify-content: center;
@@ -716,7 +716,7 @@ a {
 
 .btn-token {
   display: flex;
-  background: linear-gradient(90deg, #f334a9 46.4%, #66b2ca 100%);
+  background: #bbedf4;
   border: 1.32708px solid #000000;
   align-items: center;
   justify-content: center;
@@ -726,6 +726,7 @@ a {
   /* width: 70%; */
   gap: 10px;
   font-size: 1.15rem;
+  color: gray;
 }
 
 hr {

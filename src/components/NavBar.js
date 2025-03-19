@@ -56,7 +56,7 @@ function NavBar() {
         <ul className={`flex-navBar ${isOpen ? "show" : ""}`}>
           <li>
             <Link to="/" className="logo display-none-mobile">
-              Blu
+              ChuckBot
             </Link>
           </li>
 
@@ -102,7 +102,7 @@ function NavBar() {
           <li>
             <a
               className="navbar-hover-effect"
-              href="https://t.me/+8UZkauZX57YwNzEy"
+              href="https://t.me/Chuck_on_Base"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -123,7 +123,7 @@ function NavBar() {
           <li>
             <a
               className="navbar-hover-effect"
-              href="https://x.com/BasedBluAlien"
+              href="https://x.com/CHUCK_on_Base"
               target="_blank"
               rel="noopener noreferrer"
             >
@@ -145,11 +145,11 @@ function NavBar() {
           <li>
             <a
               className="btn-navBar navbar-hover-effect"
-              href="https://app.uniswap.org/swap?chain=base&inputCurrency=NATIVE&outputCurrency=0x52e0d3c27cc9e3607c1ca7914b9049be3d5e9c41"
+              href="https://app.uniswap.org/swap?chain=base&outputCurrency=0x7A8A5012022BCCBf3EA4b03cD2bb5583d915fb1A"
               target="_blank"
               rel="noopener noreferrer"
             >
-              Buy Blu
+              Buy Chuck
             </a>
           </li>
         </ul>
