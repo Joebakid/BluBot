@@ -216,7 +216,7 @@ export default function Header() {
 
         <div className="text-center">
           <p>Copyright © 2024 Chuck. All rights reserved.</p>
-          <a href="mailto:info@basedblualien.com">info@basedblualien.com</a>
+          <a href="mailto:info@chuckonbase.io">info@chuckonbase.io</a>
         </div>
       </div>
     </section>
