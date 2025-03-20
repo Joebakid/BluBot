@@ -44,7 +44,7 @@ function NavBar() {
       <div className="container">
         <div className="logo-hamburger">
           <Link to="/" className="logo display-none-desktop">
-            Blu
+           Chuck
           </Link>
           <div className="hamburger" onClick={toggleMenu}>
             <div className={`bar ${isOpen ? "open" : ""}`}></div>
